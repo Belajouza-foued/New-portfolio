@@ -6,7 +6,7 @@
 
 /* Sidebar container */
 .sidebar {
-  width: 250px !important;
+  width: 300px !important;
   height: 100vh;
   background-color: rgb(var(--n2));
   padding: 20px;

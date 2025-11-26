@@ -2,7 +2,7 @@
 .section-projects {
   text-align: center;
   margin: 40px auto;
-  padding: 30px;
+  padding: 50px;
   max-width: 100%;
   border-bottom: 1px solid #d1d1d1;
 }
@@ -69,3 +69,6 @@ justify-content: start;
     margin-left: -40px;
   }
 }
+/*card*/
+
+
