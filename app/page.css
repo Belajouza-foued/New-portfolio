@@ -1,0 +1,71 @@
+/* SECTION GLOBALE */
+.section-projects {
+  text-align: center;
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 100%;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+/* TITRE */
+.title-projects {
+  font-size: 2rem;      /* Mobile */
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+}
+
+/* PARAGRAPHE */
+.paragraph-projects {
+  color: #666;
+max-width: 700px !important;
+  margin: 0 auto !important;           /* centre horizontalement */
+  font-size: 1rem;          /* Mobile */
+  line-height: 1.6;
+  display: flex;
+  text-align: center;   
+justify-content: start;
+}
+
+/* BOUTON */
+.btn-hire {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgb(var(--p1));
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-hire:hover {
+  background: #2563eb; /* bleu */
+}
+
+/* ============================
+   MEDIA QUERY : TABLET + DESKTOP
+   ============================ */
+@media (min-width: 768px) {
+
+  .title-projects {
+    font-size: 1.8rem;  /* plus petit sur desktop comme tu veux */
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  .paragraph-projects {
+    font-size: 1.1rem;
+    text-align: left;
+    margin-left: 20px;
+ 
+  }
+
+  .btn-hire {
+    margin-left: -40px;
+  }
+}

@@ -1,16 +1,114 @@
-@import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+    --p1: 82, 113, 255;
+  --p2: 217, 236, 227;
+  --n1: 255, 255, 255;
+  --n11: 255, 255, 255;
+  --n2: 250, 250, 250;
+  --n3: 143, 143, 143;
+  --n4: 79, 79, 79;
+  --n41: 79, 79, 79;
+  --n42: 79, 79, 79;
+  --n5: 41, 41, 41;
+  --n51: 41, 41, 41;
+  --y1: 255, 172, 39;
+  --bg1: 120, 171, 168;
+  --bg2: 255, 145, 251;
+  --bg3: 253, 187, 46;
+  --bg4: 82, 113, 255;
+  --bg5: 0, 255, 255;
+  --bg6: 84, 182, 137;
+}
+.br-bottom-n3 {
+  border-bottom: 1px solid rgba(var(--n4), 0.08);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --p2: 84, 182, 137;
+  --n1: 41, 41, 41;
+  --n11: 255, 255, 255;
+  --n2: 79, 79, 79;
+  --n3: 143, 143, 143;
+  --n4: 250, 250, 250;
+  --n41: 255, 255, 255;
+  --n42: 255, 255, 255;
+  --n5: 255, 255, 255;
+  --n51: 79, 79, 79;
+  --y1: 255, 172, 39;
 }
+.fs-one,
+h1,
+h1 > a {
+  font-size: 48px;
+  line-height: 120%;
+}
+
+.fs-two,
+h2,
+h2 > a {
+  font-size: 40px;
+  line-height: 120%;
+}
+
+.fs-three,
+h3,
+h3 > a {
+  font-size: 32px;
+  line-height: 120%;
+}
+
+.fs-four,
+h4,
+h4 > a {
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.fs-five,
+h5,
+h5 > a {
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.fs-six,
+h6,
+h6 > a {
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.fs-seven {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.fs-eight {
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.fs-nine {
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.fs-ten {
+  font-size: 12px;
+  line-height: 130%;
+}
+
+.fs-eleven {
+  font-size: 10px;
+  line-height: 130%;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -24,3 +122,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
