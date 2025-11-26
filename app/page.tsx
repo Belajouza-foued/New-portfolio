@@ -17,7 +17,7 @@ const projects = [
     id: 2,
     title: "World Fitness App",
     categories: ["React JS", "Web Development"],
-    images: ["/help.png", "/nutrition.png"],
+    images: ["/help.png", "/about.png"],
     href: "/#contact",
   },
 ];
