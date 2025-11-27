@@ -11,9 +11,7 @@ export default function Contact() {
         <button className="bg-blue-600 text-white py-3 rounded">
           Envoyer
         </button>
-        <h2>cafe rihab</h2>
-         <h3>cafe achraf</h3>
-      </form>
+             </form>
     </div>
   );
 }
