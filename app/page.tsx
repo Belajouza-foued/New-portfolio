@@ -17,9 +17,52 @@ const projects = [
     id: 2,
     title: "World Fitness App",
     categories: ["React JS", "Web Development"],
-    images: ["/help.png", "/about.png"],
+    images: ["/help.png", "/images/fact-adc.png"],
     href: "/#contact",
   },
+    {
+    id: 3,
+    title: "Nutrition App",
+    categories: ["React JS", "Frontend"],
+    images: ["/images/adc-port-red.png", "/images/accordion.png"],
+    href: "/#contact",
+  },
+  {
+    id: 4,
+    title: "Nutrition Regitser",
+    categories: ["React JS", "Web Development"],
+    images: ["/images/login-1.png", "/images/register.png"],
+    href: "/#contact",
+  },
+    {
+    id: 5,
+    title: "Nutrition App",
+    categories: ["React JS", "Frontend"],
+    images: ["/images/dash-image.png", "/images/coach.png"],
+    href: "/#contact",
+  },
+  {
+    id: 6,
+    title: "Marketing Dashboard",
+    categories: ["React JS", "Web Development"],
+    images: ["/images/dash-2.png", "/images/dash-figma.png"],
+    href: "/#contact",
+  },
+    {
+    id: 7,
+    title: "BCC App",
+    categories: ["React JS", "Frontend"],
+    images: ["/form-bcc.png", "/images/footer-bbc.png"],
+    href: "/#contact",
+  },
+  {
+    id: 8,
+    title: "Best Challenge Center",
+    categories: ["React JS", "Web Development"],
+    images: ["/images/choose-img.png", "/images/phone-bbc.png"],
+    href: "/#contact",
+  },
+  
 ];
 
 export default function Home() {
@@ -54,7 +97,7 @@ export default function Home() {
       {["All", "Web App", "Frontend", "Backend", "Adobe XD", "Photoshop", "Figma", "Marketing Digital", "InDesign"].map((tab) => (
         <button
           key={tab}
-          className="px-8 py-10 text-gray-500 font-medium rounded hover:bg-gray-100 transition"
+          className="px-8 py-4 text-gray-500 font-medium rounded hover:bg-gray-100 transition"
         >
           {tab}
         </button>
@@ -62,50 +105,54 @@ export default function Home() {
     </div>
 
     {/* Projets */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+{/* Projets */}
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
   {projects.map((project) => (
-   <div key={project.id} className="project-card border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
-  <Link href={project.href} className="block relative group">
-    {/* Image par défaut */}
-    <Image2
-      src={project.images[0]}
-      width={500}
-      height={300}
-      alt={project.title}
-      className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-90"
-    />
+    <div key={project.id} className="project-card border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
 
-    {/* Image hover */}
-    {project.images[1] && (
-      <Image2
-        src={project.images[1]} // deuxième image
-        width={500}
-        height={300}
-        alt={project.title + " hover"}
-        className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-      />
-    )}
+      <Link href={project.href} className="block relative group w-full h-64 md:h-70 lg:h-96">
+   
+        {/* Image principale */}
+        <Image2
+          src={project.images[0]}
+          alt={project.title}
+          fill
+          className="object-contain transition duration-300 group-hover:opacity-0"
+        />
 
-    {/* Overlay noir si tu veux */}
-    <div className=""><h1>samir</h1></div>
-  </Link>
+        {/* Image hover */}
+        {project.images[1] && (
+          <Image2
+            src={project.images[1]}
+            alt={project.title + ' hover'}
+            fill
+             className={`object-contain absolute inset-0 opacity-0 transition duration-300 ${
+            project.id === 5 ? 'group-hover:scale-110' : 'group-hover:opacity-100'
+          } group-hover:opacity-100`}
+          
+        />
+        )}
+      </Link>
 
-  <div className="p-4">
-    <div className="flex flex-wrap gap-2 mb-2">
-      {project.categories.map((cat, i) => (
-        <span key={i} className="px-3 py-3 mt-5 text-sm bg-gray-200 rounded-full text-gray-700">
-          {cat}
-        </span>
-      ))}
+      <div className="p-4">
+        <div className="flex flex-wrap gap-2 mb-2">
+          {project.categories.map((cat, i) => (
+            <span key={i} className="px-3 py-1 text-sm bg-gray-200 rounded-full text-gray-700">
+              {cat}
+            </span>
+          ))}
+        </div>
+
+        <Link href={project.href} className="text-lg font-semibold text-gray-800 hover:text-blue-500 block">
+          {project.title}
+        </Link>
+      </div>
+
     </div>
-    <Link href={project.href} className="text-lg font-semibold text-gray-800 hover:text-blue-500 block">
-      {project.title}
-    </Link>
-  </div>
-</div>
-
   ))}
 </div>
+
+
 
 
 

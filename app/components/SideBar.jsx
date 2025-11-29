@@ -7,7 +7,8 @@ import "./SideBar.css";
 
 export default function SideBar() {
   return (
-    <aside className="sidebar w-full md:w-1/4 lg:w-1/5 p-5 bg-white shadow-md flex flex-col items-center md:items-start">
+    <aside className="sidebar  md:flex md:w-1/4 lg:w-1/5 p-5 bg-white shadow-md flex flex-col items-center md:items-start fixed  h-screen">
+      
       {/* Photo de profil */}
       <Image
         src="/fofo-2.jpg"
@@ -42,12 +43,12 @@ export default function SideBar() {
         </Link>
       </nav>
 
-      <Link
-        href="/#contact"
-        className="hire-btn mt-auto  text-center"
-      >
-        Hire Me<FiArrowRight className="w-5 h-5"/>
-      </Link>
+            <Link
+    href="/#contact"
+    className="hire-btn mt-auto text-center flex items-center justify-center gap-2 py-3 font-semibold"
+  >
+    Hire Me <FiArrowRight className="w-5 h-5" />
+  </Link>
     </aside>
   );
 }

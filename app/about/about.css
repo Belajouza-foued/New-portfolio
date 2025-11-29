@@ -1,0 +1,79 @@
+.banner-content {
+  width: 478px;
+}
+.banner-content .typing-text {
+  color: rgba(var(--p1), 1);
+}
+.banner-content .typing-text::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.bg-white {
+  border-radius: 5%;
+}
+.user-bg {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(var(--p1), 1);
+  animation: rotatedBg 10s infinite linear;
+    border-radius: 5%;
+  
+}
+
+@keyframes rotatedBg {
+  0%, 100% {
+    transform: rotate(11.163deg);
+  }
+  50% {
+    transform: rotate(-11.163deg);
+  }
+}
+.user-img {
+  position: absolute;
+  left: 25px;
+  top: 0px;
+  width: 350px;
+  height: 400px;
+  z-index: 0;
+  border-radius: 10px;
+ }
+ .profile-image {
+  width: 300px;
+  height: 350px;
+ }
+ .user-title {
+
+ }
+
+.line {
+  width: 1px;
+  height: 38px;
+  background-color: rgba(var(--n5), 1);
+}
+
+.banner-counter {
+  width: 636px;
+}
+
+.service-card {
+  background-color: rgba(var(--n2), 1);
+  border: 1px solid rgba(143, 143, 143, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+.service-card:hover {
+  background-color: rgba(var(--n1), 1);
+  border: 1px solid rgba(var(--p1), 1);
+  box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.16);
+}
+.display-one {
+  font-size: 80px;
+  line-height: 120%;
+}
