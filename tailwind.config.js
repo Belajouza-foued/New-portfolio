@@ -6,17 +6,20 @@ module.exports = {
   ],
   theme: {
      extend: {
+        colors: {
+        primary: "#3b82f6", // ta couleur principale
+      },
       keyframes: {
-              slideInDown: {
-          "0%": { transform: "translateY(-120px)", opacity: "0" },
-           "60%":{ opacity: "0.5" },
-          "100%": { transform: "translateY(0)", opacity: "1" },
+              slideInRight: {
+          "0%": { transform: "translateX(100px)", opacity: "0" },
+           "50%":{ opacity: "0.5" },
+          "100%": { transform: "translateX(-100)", opacity: "1" },
         },
       },
       animation: {
-               slideInDown: "slideInDown 2.8s ease-in-out  forwards",
+               slideInRight: "slideInRight 2.8s ease-in-out  forwards",
       },
-    },
+          },
   },
-  plugins: [],
+    plugins: [],
 };

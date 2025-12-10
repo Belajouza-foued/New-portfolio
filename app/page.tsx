@@ -67,14 +67,14 @@ const projects = [
 
 export default function Home() {
   return (
-   <div className="flex flex-col md:flex-row min-h-screen md:-ml-20">
+   <div className="flex flex-col md:flex-row min-h-screen md:-ml-20 bg-gray-100">
   {/* Sidebar */}
   <aside className="w-full md:w-1/4">
     <SideBar />
   </aside>
 
   {/* Contenu principal */}
-  <main className="w-full md:w-4/4 p-5">
+  <main className="w-full md:w-4/4 p-10 lg:ml-6">
   <section className="section-projects p-5">
   <h3 className="title-projects pt-5">
     A collection of my best projects
@@ -93,11 +93,11 @@ export default function Home() {
 
 
     {/* Filtre des projets */}
-    <div className="flex flex-wrap justify-center gap-4  w-full md:-ml-15">
-      {["All", "Web App", "Frontend", "Backend", "Adobe XD", "Photoshop", "Figma", "Marketing Digital", "InDesign"].map((tab) => (
+    <div className="flex flex-wrap justify-center gap-4  w-full md:-ml-15 pb-10">
+      {["All", "Web App", "Frontend", "Backend", "Adobe XD", "Photoshop", "Figma", "Marketing Digital"].map((tab) => (
         <button
           key={tab}
-          className="px-8 py-4 text-gray-500 font-medium rounded hover:bg-gray-100 transition"
+          className="px-8 py-3 text-gray-500 font-medium rounded-full hover:bg-primary/80 hover:text-white transition"
         >
           {tab}
         </button>

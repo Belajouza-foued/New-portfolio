@@ -1,21 +1,4 @@
-.banner-content {
-  width: 478px;
-}
-.banner-content .typing-text {
-  color: rgba(var(--p1), 1);
-}
-.banner-content .typing-text::after {
-  content: "|";
-  animation: blink 1s step-end infinite;
-}
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
+
 .bg-white {
   border-radius: 5%;
 }
@@ -46,12 +29,10 @@
   border-radius: 10px;
  }
  .profile-image {
-  width: 300px;
-  height: 350px;
+  width: 200px;
+  height: 250px;
  }
- .user-title {
 
- }
 
 .line {
   width: 1px;
@@ -77,3 +58,23 @@
   font-size: 80px;
   line-height: 120%;
 }
+.border-b {
+  text-align: center;
+  
+}
+/*video*/ 
+.hover-video-card {
+  width: 100%;
+}
+
+.media-wrapper {
+  width: 100%;
+  height: auto;
+}
+.hover-video-card{
+padding-top: 15px;
+}
+.br-left-p1 {
+ 
+  }
+

@@ -1,5 +1,7 @@
-export default function Contact() {
+"use clients"
+export default function Blog() {
   return (
+    <div className="container">
     <div className="p-10 max-w-xl mx-auto">
       <h1 className="text-4xl font-bold">Contact</h1>
 
@@ -13,5 +15,34 @@ export default function Contact() {
         </button>
              </form>
     </div>
+    <div className="container mx-auto">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    
+    <div>
+      <h1>fofo</h1>
+    </div>
+
+    <div>
+      <h1>samir</h1>
+    </div>
+     <div>
+      <h1>ahmad</h1>
+    </div>
+     <div>
+      <h1>safa</h1>
+    </div>
+    <div>
+      <h1>salma</h1>
+    </div>
+     <div>
+      <h1>ihab</h1>
+    </div>
+
+  </div>
+</div>
+
+   
+    </div>
+   
   );
 }
