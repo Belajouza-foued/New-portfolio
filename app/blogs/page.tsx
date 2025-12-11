@@ -39,10 +39,24 @@ export default function Blog() {
     </div>
 
   </div>
-</div>
-
-   
+ </div>
+    <div className="grid grid-cols-1 lg:grid-cols-3 h-screen mx-10 ">
+      <section data-aos="zoom-in" className="max-w-full w-full mt-14 lg:-ml-10 ps-5">
+           <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.1535222957714!2d10.600185575258116!3d35.845238920948034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8b00157e66eb%3A0x8b4bca4156e550a8!2sKhezama%20Ouest!5e0!3m2!1sfr!2stn!4v1739987311370!5m2!1sfr!2stn"
+          className="w-full rounded-xl border-0"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+          </section>
+  </div>
+  <div className="flex display-block">
+      <span className="text-center">cafe opium</span>
+    <span className="text-center">cafe second</span>
+  </div>
     </div>
+    
    
   );
 }

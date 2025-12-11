@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 
-export default function MoreContact() {
+export default function MoreContact({className}) {
   const [showMore, setShowMore] = useState(false);
 
   return (
     <div className="mt-5 pb-2 text-center">
       {/* Titre */}
-      <p className="underline underline-offset-4 leading-7">
+      <p className="underline underline-offset-4 text-xl leading-7 text-blue-700">
        For more information, click this button:
       </p>
 

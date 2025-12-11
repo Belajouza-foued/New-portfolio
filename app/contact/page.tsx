@@ -4,6 +4,8 @@ import MoreContact from "../components/MoreContact"
 import { DeviceMobileCamera,Compass  } from "phosphor-react";
 import SideBar from "../components/SideBar";
 
+
+
 export default function Contact() {
   return (
      <div className="min-h-screen bg-gray-100">
@@ -17,10 +19,10 @@ export default function Contact() {
         </aside>
 
         {/* CONTENU PRINCIPAL → col-9 desktop / col-12 mobile */}
-        <main className="col-span-12 lg:col-span-9 p-6">
+        <main className="col-span-12 lg:col-span-9  lg:ml-10">
 
           {/* TITRE */}
-          <section className="text-center max-w-3xl mx-auto mt-10 lg:ml-20 ps-5">
+          <section className="text-center max-w-3xl mx-auto mt-10 lg:ml-20 ps-5  ml-0 md:ml-10 px-5">
             <h1 className="text-3xl sm:text-4xl text-gray-700 font-bold">
               Contact
             </h1>
@@ -37,22 +39,22 @@ export default function Contact() {
           {/* CONTACT DETAILS */}
           <section
             data-aos="zoom-in-left"
-            className="max-w-4xl mx-auto mt-10"
+            className="max-w-5xl mx-auto mt-10 flex flex-col md:flex-row items-center ps-5"
           >
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 lg:-ml-20">
               <div className="w-1 h-24 bg-blue-600"></div>
-              <h2 className="text-3xl lg:text-5xl font-semibold text-gray-800">
+              <h2 className="text-2xl md:text-3xl  lg:text-3xl font-semibold text-gray-800">
                 Contact Details
               </h2>
             </div>
 
-            <p className="text-gray-600 mt-5 ps-4">
+            <p className="text-gray-600 text-sm flex-1 ps-10 tracking-wide">
               If you are going to use a passage of Lorem Ipsum, be sure there isn't anything embarrassing hidden in the text.
             </p>
           </section>
 
           {/* 3 BOXES */}
-          <section className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto mt-10 lg:ml-10 ps-7">
+          <section className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto mt-10 ml-0 md:ml-10 lg:-ml-20 ps-7">
 
             <div className="flex items-center gap-4 justify-center">
               <div className="w-[2px] h-20 bg-blue-400"></div>
@@ -86,7 +88,7 @@ export default function Contact() {
           </section>
 
           {/* GOOGLE MAP */}
-          <section data-aos="zoom-in" className="max-w-5xl mx-auto mt-14 lg:-ml-10 ps-5">
+          <section data-aos="zoom-in" className="max-w-5xl mx-auto mt-14 lg:-ml-10  ml-0 md:ml-10 px-5">
            <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.1535222957714!2d10.600185575258116!3d35.845238920948034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8b00157e66eb%3A0x8b4bca4156e550a8!2sKhezama%20Ouest!5e0!3m2!1sfr!2stn!4v1739987311370!5m2!1sfr!2stn"
           className="w-full h-64 md:h-96 rounded-xl border-0"
@@ -97,7 +99,7 @@ export default function Contact() {
           </section>
 
           {/* FORMULAIRE */}
-          <section className="max-w-4xl mx-auto mt-14 lg:ml-10">
+          <section className="max-w-4xl mx-auto mt-14 lg:ml-10  ml-0 md:ml-10 px-5">
             <h2 className="text-center text-2xl font-semibold mb-4">Get In Touch</h2>
             <p className="text-center text-gray-600 mb-8">
               Send me a message — I'll respond as soon as possible.
@@ -115,10 +117,10 @@ export default function Contact() {
             </form>
           </section>
 <div className="text-center mx-auto lg:-ml-20 pt-5 mt-5">
-  <MoreContact />
-
+  <MoreContact className=""/>
 </div>
         </main>
+      
       </div>
     </div>
   );

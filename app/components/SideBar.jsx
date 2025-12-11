@@ -26,19 +26,19 @@ export default function SideBar() {
 
       {/* Menu */}
       <nav className="menu w-full flex flex-col gap-3">
-        <Link href="/#about" className="nav-link flex items-center gap-2">
+        <Link href="/about" className="nav-link flex items-center gap-2">
           <FiUser className="icon" /> About Me
         </Link>
-        <Link href="/#projects" className="nav-link flex items-center gap-2">
+        <Link href="/projects" className="nav-link flex items-center gap-2">
           <FiFolder className="icon" /> Projects
         </Link>
-        <Link href="/#blogs" className="nav-link flex items-center gap-2">
+        <Link href="/blogs" className="nav-link flex items-center gap-2">
           <FiFileText className="icon" /> Blogs
         </Link>
         <Link href="/#portfolio" className="nav-link flex items-center gap-2">
           <FiGrid className="icon" /> Portfolio
         </Link>
-        <Link href="/#contact" className="nav-link flex items-center gap-2">
+        <Link href="/contact" className="nav-link flex items-center gap-2">
           <FiMail className="icon" /> Contact
         </Link>
       </nav>
@@ -47,7 +47,7 @@ export default function SideBar() {
     href="/#contact"
     className="hire-btn mt-auto text-center flex items-center justify-center gap-2 py-3 font-semibold"
   >
-    Hire Me <FiArrowRight className="w-5 h-5" />
+    Hire Me <FiArrowRight className="w-5 h-5 p-0" />
   </Link>
     </aside>
   );

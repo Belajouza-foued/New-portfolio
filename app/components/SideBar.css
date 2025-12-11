@@ -15,8 +15,7 @@
     position: fixed;
   top: 0;
   left: 0;
-
-}
+  }
 
 /* Photo de profil */
 .profile-img {
@@ -96,9 +95,8 @@
 .hire-btn {
   margin-top: auto;          /* pousse le bouton vers le bas */
   margin-bottom: 20px;       /* espace depuis le bas */
-  display: inline-block;
-  width: 50%;
-  font-size: 15px;
+   width: 50%;
+  font-size: 13px;
   text-align: center;
   padding: 8px;
   background-color: rgb(var(--p1));
