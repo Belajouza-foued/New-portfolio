@@ -6,15 +6,14 @@
 
 /* Sidebar container */
 .sidebar {
-  width: 250px !important;
-  height: 100vh;
-  background-color: rgb(var(--n2));
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-    position: fixed;
-  top: 0;
-  left: 0;
+ 
+  }
+  @media (max-width: 768px) {
+.sidebar {
+ border-radius: 25px;
+
+  }
+
   }
 
 /* Photo de profil */
@@ -22,6 +21,11 @@
   border-radius: 50%;
   border: 2px solid rgb(var(--n4));
   margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+.profile-img {
+ margin-left: 10px;
+}
 }
 
 /* Nom et titre */
@@ -53,6 +57,14 @@
   flex-direction: column;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  .menu {
+ transform: translateX(-50px);
+max-width: 100px;
+ padding: 20px;
+
+         }
+}
 
 .nav-link {
   display: flex;
@@ -64,7 +76,14 @@
   text-decoration: none;
   transition: all 0.3s;
 }
-
+@media (max-width: 768px) {
+.nav-link {
+max-height: 15px;
+transform: translateX();
+gap: 3px;
+max-width: 50px;
+}
+}
 .nav-link:hover {
   padding: 12px;
   background-color: rgb(var(--p1));
@@ -111,5 +130,17 @@
   background-color: rgb(60, 90, 255); /* bleu plus foncé au hover */
   transform: translateY(-2px);
 }
+@media (max-width: 768px) {
+ .hire-btn {
+   /* bleu plus foncé au hover */
+ 
+    transform: translateX(-50px);
+    max-width: 60px;
+    max-height: 40px;
+   text-align: center;
+} 
+}
+
+
 
 

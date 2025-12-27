@@ -6,6 +6,7 @@ import {FiArrowRight } from "react-icons/fi";
 import ButtonLink from "../components/ButtonLink"
 import HoverImage from "../components/HoverImage"
 import { Star } from "phosphor-react";
+import SideBar from "../components/SideBar";
 const projects1 = [
   {
     id: 9,
@@ -58,8 +59,10 @@ export default function About() {
 
   return (
  <div className="pt-32 pb-16 border-b overflow-hidden mt-10 lg:mt-0 bg-gray-100">
-  <div className="container mx-auto px-4 flex flex-wrap items-center justify-between">
-
+ <aside className="w-full md:w-1/4">
+    <SideBar />
+  </aside>
+    <div className="container mx-auto px-4 flex flex-wrap items-center justify-between">
     {/* LEFT TEXT */}
     <div className="w-full lg:w-1/2  lg:pl-40">
       <div className="banner-content mt-10 max-w-lg ">
@@ -115,7 +118,7 @@ export default function About() {
         {/* IMAGE */}
         <div className="profile-image w-50 animate-slideInRight overflow-hidden rounded-xl shadow-lg lg:-ml-20">
           <img
-            src="/images/foued-3.jpg"
+            src="/images/mon-image.jpg"
             alt="user"
             className="w-50 object-cover rounded-xl"
           />
@@ -710,23 +713,7 @@ export default function About() {
                       </div>
                     </div>
                   </div>
-       <section className="pt-5 mt-5">
-        <div className="md:ml-[320px] container flex flex-end 
-             sm:justify-between top-3 relative
-            
-   ">
-  <span className="text-sm font-medium text-gray-700 flex flex-end">
-    Designed by <a href="#" className="font-medium text-gray-700">Foued Belajouza</a>
-  </span>
-
-  <span className="text-sm font-medium text-gray-700 md:ml-[320px]">
-    Copyright © 2024 <a href="#" className="font-medium text-gray-700">Portfolify</a>. All Rights Reserved.
-  </span>
-  </div>
-</section>
-
-
-
+    
 
   </div>
 </div>

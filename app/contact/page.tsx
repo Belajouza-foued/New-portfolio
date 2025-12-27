@@ -114,7 +114,7 @@ export default function Contact() {
               <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg">
                 Send Message
               </button>
-            </form>
+                        </form>
           </section>
 <div className="text-center mx-auto lg:-ml-20 pt-5 mt-5">
   <MoreContact className=""/>

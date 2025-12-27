@@ -74,13 +74,13 @@ export default function Home() {
   </aside>
 
   {/* Contenu principal */}
-  <main className="w-full md:w-4/4 p-10 lg:ml-6">
+  <main className="col-span-12 lg:col-span-9">
   <section className="section-projects p-5">
   <h3 className="title-projects pt-5">
     A collection of my best projects
   </h3>
 
-  <p className="paragraph-projects pt-5">
+  <p className="paragraph-projects pt-5 ps-10">
     With many years in web development, I acquired extensive experience
     working on projects across freelance and technologies. Let me show
     you my best creations.
@@ -117,7 +117,7 @@ export default function Home() {
           src={project.images[0]}
           alt={project.title}
           fill
-          className="object-contain transition duration-300 group-hover:opacity-0"
+          className="object-contain transition duration-300 group-hover:opacity-0 w-full h-auto"
         />
 
         {/* Image hover */}
@@ -126,7 +126,7 @@ export default function Home() {
             src={project.images[1]}
             alt={project.title + ' hover'}
             fill
-             className={`object-contain absolute inset-0 opacity-0 transition duration-300 ${
+             className={`object-contain absolute inset-0 opacity-0 transition duration-300 w-full h-auto ${
             project.id === 5 ? 'group-hover:scale-110' : 'group-hover:opacity-100'
           } group-hover:opacity-100`}
           

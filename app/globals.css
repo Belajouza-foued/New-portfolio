@@ -104,6 +104,9 @@ h6 > a {
   font-size: 10px;
   line-height: 130%;
 }
+.n4-color {
+  color: rgba(var(--n4), 1);
+}
 
 @tailwind base;
 @tailwind components;
