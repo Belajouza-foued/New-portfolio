@@ -34,20 +34,21 @@ export default function Resume() {
     <div className="container mx-auto px-4 flex flex-wrap justify-between items-center text-justify gap-4 md:gap-10 pt-2">
       
       {/* Texte */}
-      <div data-aos="zoom-in-left" className="max-w-xl">
-        <h3 className="text-3xl md:text-4xl font-semibold text-blue-600">
+      <div data-aos="zoom-in-left" className="md:max-w-xl md:-ml-2 -ml-6">
+        <h3 className="text-xl md:text-4xl font-semibold text-blue-600">
           Foued Belajouza
         </h3>
   
-        <p className="text-sm md:text-base text-gray/80">
+        <p className="text-xs md:text-base text-gray">
         Junior Developer
         </p>
       </div>
   
       {/* Bouton */}
-     <div className="flex flex-nowrap justify-center items-center">
-       <div className="w-0.5 h-24 bg-gray-600 opacity-50 decoration-2"></div>
-      <ul className="ps-5 text-gray-500 text-sm leading-[1.5] font-thin">
+     <div className="flex flex-nowrap justify-center items-center foued-contact">
+       <div className="w-0.5 h-24 bg-gray-600 opacity-50 decoration-2 me-2"></div>
+      <ul className=" text-gray-500 text-xs md:text-sm  leading-[1.5] font-thin pl-4 -ml-10 sm:ml-6 md:ml-0
+">
          <li className="flex items-center gap-2">
        <FaPhoneAlt className="text-blue-500 hover:text-gray-600"/>
      <span>+216 58 860 181</span>
@@ -74,7 +75,7 @@ export default function Resume() {
       src="/images/mon-image.jpg"
       alt="user"
       className="
-        w-[180px] h-[180px]
+        w-[100px] h-[80px]
         sm:w-[220px] sm:h-[220px]
         md:w-[250px] md:h-[250px]
         rounded-full
@@ -84,18 +85,17 @@ export default function Resume() {
   </div>
 
   <p className="
-     text-center md:text-justify
-     text-base
+     text-center text-justify
+     md:text-base
      text-gray-600
-    max-w-3xl
-    text-base sm:text-m
+       text-xs 
       leading-relaxed
   ">
-    I’m a Tunisian Full-Stack Web Developer and Web Designer focused on crafting
-    clean, user-friendly, and efficient digital experiences. I’m passionate
+    I’m a Full-Stack Web Developer and Web Designer focused on crafting
+    clean, user-friendly. I’m passionate
     about building high-quality websites using modern technologies.
-    <br /><br />
-    My background in high-level sports — as a player, teacher, and coach —
+    <br></br>
+     My background in high-level sports — as a player, teacher, and coach —
     has taught me discipline, patience, responsibility, confidence, and
     adaptability. These values drive my motivation and fast learning in
     web development, a field I’m truly passionate about.
@@ -106,27 +106,27 @@ export default function Resume() {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 
     {/* WORK EXPERIENCE */}
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 lg:-ml-5 -ml-2 sm:-ml-6 md:-ml-4  work-transform">
       
       {/* Titre */}
       <div className="flex items-center gap-3 pt-5">
         <div className="w-1 h-12 bg-blue-600"></div>
-        <h2 className="text-3xl md:text-4xl font-semibold text-blue-600">
+        <h2 className="text-2xl md:text-4xl font-semibold text-blue-600">
           Work Experience
         </h2>
         <IoCodeWorkingOutline size={20} className="text-blue-600 mt-1" />
       </div>
 
       {/* Contenu */}
-      <div className="pl-4 pt-5">
-     <ul>
-      <span className="text-blue-700 pt-5 mt-5 text-xl">Junior Developer:</span>
-      <p className="text-gray-500 text-base pt-5 mt-5">
+      <div className="pl-4 pt-5 text-justify md:w-full w-[150px]">
+     <ul className="">
+      <span className="text-blue-700 pt-5 mt-5 text-xl ">Junior Developer:</span>
+      <p className="text-gray-500 text-xs md:text-base pt-5 mt-5">
 Passionate about web development and design, I specialize in Full-Stack Development using modern frameworks like <strong>Next.Js</strong> and <strong>Nest.Js </strong>I build high-performance and scalable web applications with a strong focus on clean architecture and maintainability. My expertise includes <strong>Zod</strong> for schema validation,
 <strong>Zustand</strong>for state management, and <strong>Dto</strong> patterns to ensure reliable data flow between client and server.
       </p>
      </ul>
-     <ul className="list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+     <ul className="list-disc text-gray-500 md:text-rebase text-xs  md:leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5 w-[150px] md:w-full">
       <li>
         Developed scalable RESTful APIs using NestJS, MongoDB, and discriminators for structured data models.
       </li>
@@ -136,11 +136,11 @@ Passionate about web development and design, I specialize in Full-Stack Developm
       <li>Built responsive and interactive interfaces using Next.js, React, TypeScript, and Tailwind CSS.</li>
      </ul>
 
-    <ul className="pt-5 mt-5">
-     <span className="text-blue-700 pt-5 mt-5 text-xl">Web Designer</span>
-      <p className="text-gray-500 text-base pt-5 mt-5">Creative and passionate about UI/UX design, I design modern, user-friendly, and visually appealing interfaces that enhance user experience. Using Figma, Adobe XD, and Photoshop, I create layouts that combine aesthetics and functionality. My design process integrates responsive design, typography, and branding, ensuring each product is intuitive and engaging.</p>
+    <ul className="pt-5 mt-5 ">
+     <span className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">Web Designer</span>
+      <p className="text-gray-500 md:text-base text-sm pt-5 mt-5">Creative and passionate about UI/UX design, I design modern, user-friendly, and visually appealing interfaces that enhance user experience. Using Figma, Adobe XD, and Photoshop, I create layouts that combine aesthetics and functionality. My design process integrates responsive design, typography, and branding, ensuring each product is intuitive and engaging.</p>
       </ul>
-<ul className= "list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+<ul className= "list-disc text-gray-500   md:text-base leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5 text-xs">
        <li>
 Designed interactive prototypes and wireframes focused on usability and accessibility.
       </li>
@@ -152,10 +152,10 @@ Applied SEO and digital marketing strategies to boost visibility and user engage
       </li>
      </ul>
      <ul className="pt-5 mt-5">
-     <span className="text-blue-700 pt-5 mt-5 text-xl">BackEnd Developer</span>
-      <p className="text-gray-500 text-base pt-5 mt-5">Specialized in developing secure, modular, and scalable backends using NestJS and MongoDB. I implement clean architecture principles with DTOs, discriminators, and validation layers (Zod) to ensure data integrity and performance.</p>
+     <span className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">BackEnd Developer</span>
+      <p className="text-gray-500 md:text-base text-xs pt-5 mt-5">Specialized in developing secure, modular, and scalable backends using NestJS and MongoDB. I implement clean architecture principles with DTOs, discriminators, and validation layers (Zod) to ensure data integrity and performance.</p>
       </ul>
-<ul className= "list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+<ul className= "list-disc text-gray-500 text-xs md:text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
        <li>
 Built RESTful and modular APIs using NestJS and Express-compatible middleware.
       </li>
@@ -164,10 +164,10 @@ Developing scalable APIs with Node.js, Express.js, and MongoDB.
       </li>
         </ul>
          <ul className="pt-5 mt-5">
-     <span className="text-blue-700 pt-5 mt-5 text-xl">FrontEnd Developer</span>
-      <p className="text-gray-500 text-base pt-5 mt-5">I develop dynamic and responsive interfaces using Next.js and React, focusing on user experience and maintainable code. With Zustand and Context API, I ensure efficient state management and modular design.</p>
+     <span className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">FrontEnd Developer</span>
+      <p className="text-gray-500 text-xs md:text-base pt-5 mt-5">I develop dynamic and responsive interfaces using Next.js and React, focusing on user experience and maintainable code. With Zustand and Context API, I ensure efficient state management and modular design.</p>
       </ul>
-<ul className= "list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+<ul className= "list-disc text-gray-500 text-xs md:text-base leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
        <li>
 Built reusable UI components with React, Next.js,Bootstrap, and Tailwind CSS.
       </li>
@@ -182,16 +182,16 @@ Improved performance and SEO through server-side rendering (SSR) and static site
    
       </div>
  {/*projects*/}
-  <div className="flex items-center gap-3 pt-5">
+  <div className="flex items-center gap-3 pt-5 text-justify">
         <div className="w-1 h-12 bg-blue-600"></div>
         <h2 className="text-3xl md:text-4xl font-semibold text-blue-600">
           Projects
         </h2>
         <GrProjects size={20} className="text-blue-600"/>
       </div>
-     <div className="pl-4 pt-5">
-           <p className="text-blue-700 pt-5 mt-5 text-xl">Projects ADC:</p>
-               <ul className="list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+     <div className="pl-4 pt-5 text-justify md:w-full w-[150px]">
+           <p className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">Projects ADC:</p>
+               <ul className="list-disc text-gray-500 text-xs md:text-base leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
       <li>
         Developed scalable RESTful APIs using NestJS, MongoDB, and discriminators for structured data models.
       </li>
@@ -200,8 +200,8 @@ Improved performance and SEO through server-side rendering (SSR) and static site
       </li>
       <li>Built responsive and interactive interfaces using Next.js, React, TypeScript, and Tailwind CSS.</li>
      </ul>
-        <p className="text-blue-700 pt-5 mt-5 text-xl">Project world Fitness:</p>
-               <ul className="list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+        <p className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">Project world Fitness:</p>
+               <ul className="list-disc text-gray-500 text-xs md:text-base leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
       <li>
         WorldFitness offers tailored workout programs for pregnant women and beginners, ensuring safety and gradual progression.
       </li>
@@ -210,8 +210,8 @@ Improved performance and SEO through server-side rendering (SSR) and static site
       </li>
       <li>Beginner-friendly training plans make it easy to start a healthy and sustainable fitness journey.</li>
      </ul>
-      <p className="text-blue-700 pt-5 mt-5 text-xl">Project BCC Center:</p>
-               <ul className="list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+      <p className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">Project BCC Center:</p>
+               <ul className="list-disc text-gray-500 text-xs md:text-base leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
       <li>
      Welcome to Best Challenge Center, a professional training and consulting firm that opens the doors to a better future!
       </li>
@@ -221,21 +221,22 @@ Improved performance and SEO through server-side rendering (SSR) and static site
       <li>We invite you to take part in our training sessions, workshops, seminars, and events. Whatever your field of study, our team is here to guide you toward the best choices and opportunities for your professional growth.</li>
      </ul>
 <section className="pt-5 mt-5">
-      <div className="max-w-3xl mx-auto px-4 space-y-4">
+      <div className="md:max-w-3xl mx-auto px-4 space-y-4 md:w-full w-[250px] button-res">
 
         {/* Item 1 */}
-        <div className="border rounded-lg overflow-hidden">
+        <div className="border rounded-lg overflow-hidden button-2">
           <button
             onClick={() => setOpenIndex(openIndex === 0 ? null : 0)}
             className="
-              w-full
+              md:w-full
               text-left
               px-5
               py-4
               bg-blue-600
               text-white
               font-medium
-              tracking-wide
+              md:tracking-wide
+              tracking-tight
               flex
               justify-between
               items-center
@@ -244,7 +245,7 @@ Improved performance and SEO through server-side rendering (SSR) and static site
             "
           >
             What is your experience in web development?
-            <span className="text-xl">
+            <span className="md:text-xl text-sm">
               {openIndex === 0 ? "−" : "+"}
             </span>
           </button>
@@ -261,7 +262,7 @@ Improved performance and SEO through server-side rendering (SSR) and static site
         </div>
 
         {/* Item 2 */}
-        <div className="border rounded-lg overflow-hidden">
+        <div className="border rounded-lg overflow-hidden button-2 ">
           <button
             onClick={() => setOpenIndex(openIndex === 1 ? null : 1)}
             className="w-full text-left px-5 py-4 bg-blue-600 text-white font-medium flex justify-between items-center hover:bg-blue-700 transition"
@@ -284,13 +285,13 @@ Improved performance and SEO through server-side rendering (SSR) and static site
         </div>
 
         {/* Item 3 */}
-        <div className="border rounded-lg overflow-hidden">
+        <div className="border rounded-lg overflow-hidden button-2 ">
           <button
             onClick={() => setOpenIndex(openIndex === 2 ? null : 2)}
-            className="w-full text-left px-5 py-4 bg-blue-600 text-white font-medium flex justify-between items-center hover:bg-blue-700 transition"
+            className="md:w-full text-left px-5 py-4 bg-blue-600 text-white font-medium flex justify-between items-center hover:bg-blue-700 transition"
           >
             What technologies do you use most often?
-            <span className="text-xl">
+            <span className="md:text-xl text-xs">
               {openIndex === 2 ? "−" : "+"}
             </span>
           </button>
@@ -320,48 +321,47 @@ Improved performance and SEO through server-side rendering (SSR) and static site
    {/* EXPERIENCE */}
     <div className="flex flex-col gap-4">
                {/* Titre */}
-      <div className="flex flex-nowrap justify-center items-center flex items-stretch h-full">
+      <div className="flex flex-nowrap justify-center items-center flex items-stretch h-full cv-fofo">
                <div className="w-[1px] h-full bg-gray-400 opacity-50 decoration-2"></div>
-      <ul className="ps-10 list-disc text-gray-500 text-rebase leading-[5] font-thin marker:text-gray-600 marker:text-l">
+      <ul className="ps-10 list-disc text-gray-500 text-base leading-[5] font-thin marker:text-gray-600 marker:text-l">
          <div className="flex items-center gap-3 pt-5">
         <div className="w-1 h-12 bg-blue-600"></div>
-        <h2 className="text-3xl md:text-4xl font-semibold text-blue-600">
+        <h2 className="text-xl md:text-4xl font-semibold text-blue-600">
           Experience
         </h2>
         <SiExpertsexchange className="text-blue-600" size={20}/>
       </div>
-    <span className="text-blue-700 pt-5 mt-5 text-xl">Technical:</span>
-   
-   <ul className="ps-5 list-disc text-gray-500 text-rebase leading-[5] font-thin marker:text-gray-600 marker:text-l">
+    <p className="text-blue-700 pt-5 mt-5 md:text-xl text-sm text-justify">Technical:</p>
+     <ul className="ps-5 list-disc text-gray-500 md:text-base leading-[5] font-thin marker:text-gray-600 marker:text-l text-justify">
     <li className  
-   ="fs-six n5-color leading-[2]">
+   ="fs-six n5-color leading-[2] li-responsive">
      JavaScript/React
                </li>
-                                                   <li className="fs-six n5-color leading-[2]">Node.js/express.js</li>
-                          <li className="fs-six n5-colo leading-[2]r">MongoDB</li>
-                          <li className="fs-six n5-color leading-[2]">
+                                                   <li className="fs-six n5-color leading-[2] li-responsive">Node.js/express.js</li>
+                          <li className="fs-six n5-colo leading-[2] li-responsive">MongoDB</li>
+                          <li className="fs-six n5-color leading-[2] li-responsive">
                             web design
                           </li>
-                          <li className="fs-six n5-color leading-[2]">
+                          <li className="fs-six n5-color leading-[2] li-responsive">
                             Design and implement database structures
                           </li>
-                            <li className="fs-six n5-color leading-[2]">Nest.js</li>
-                          <li className="fs-six n5-color leading-[2]">Next.js</li>
-                            <li className="fs-six n5-color leading-[2]">MongoDB</li>
-                          <li className="fs-six n5-color leading-[2]">Discriminator</li>
-                           <li className="fs-six n5-color leading-[2]">Zod</li>
-                            <li className="fs-six n5-colorleading-[2]">Zustand</li>
-                           <li className="fs-six n5-color leading-[2]">Dto</li>
-                            <li className="fs-six n5-color leading-[2]">WebSocket</li>
-                             <li className="fs-six n5-color leading-[2]">Socket.io</li>
-                             <li className="fs-six n5-color leading-[2]">Bootstrap,tailwind css</li>
-                             <li className="fs-six n5-color leading-[2]">Hook</li>
+                            <li className="fs-six n5-color leading-[2] li-responsive">Nest.js</li>
+                          <li className="fs-six n5-color leading-[2] li-responsive">Next.js</li>
+                            <li className="fs-six n5-color leading-[2] li-responsive">MongoDB</li>
+                          <li className="fs-six n5-color leading-[2] li-responsive">Discriminator</li>
+                           <li className="fs-six n5-color leading-[2] li-responsive">Zod</li>
+                            <li className="fs-six n5-colorleading-[2] li-responsive">Zustand</li>
+                           <li className="fs-six n5-color leading-[2] li-responsive">Dto</li>
+                            <li className="fs-six n5-color leading-[2] li-responsive">WebSocket</li>
+                             <li className="fs-six n5-color leading-[2] li-responsive">Socket.io</li>
+                             <li className="fs-six n5-color leading-[2] li-responsive">Bootstrap,tailwind css</li>
+                             <li className="fs-six n5-color leading-[2] li-responsive">Hook</li>
 
                              <span className="text-blue-700 pt-5 mt-5 text-xl">Professional</span>
-                              <li className="fs-six n5-color leading-[2]">Effective communication</li>
-                            <li className="fs-six n5-color leading-[2]">Team player</li>
-                             <li className="fs-six n5-color leading-[2]">Strong problem solver</li>
-                             <li className="fs-six n5-color leading-[2]">Good time management</li>
+                              <li className="fs-six n5-color leading-[2] li-responsive">Effective communication</li>
+                            <li className="fs-six n5-color leading-[2] li-responsive">Team player</li>
+                             <li className="fs-six n5-color leading-[2] li-responsive">Strong problem solver</li>
+                             <li className="fs-six n5-color leading-[2] li-responsive">Good time management</li>
                              </ul>                            
        <div className="flex items-center gap-3 pt-5">
         <div className="w-1 h-12 bg-blue-600"></div>
@@ -370,89 +370,89 @@ Improved performance and SEO through server-side rendering (SSR) and static site
         </h2>
         <SiSkillshare size="30" className="text-blue-600"/>
       </div>
-      <ul className="pt-5 pe-5">
-                <li className="fs-six n5-color leading-[2]">Project Management</li>
-                             <li className="fs-six n5-color leading-[2]">Public Relations Teamwork</li>
-                             <li className="fs-six n5-color leading-[2]">Time Management</li>
-                             <li className="fs-six n5-color leading-[2]">LeaderShip</li>
-                                               <li className="fs-six n5-color leading-[2]">Effective Communication</li>
-                             <li className="fs-six n5-color leading-[2]">Critical THinking</li>
+      <ul className="pt-5 pe-5 text-justify li-responsive">
+                <li className="fs-six n5-color leading-[2] li-responsive">Project Management</li>
+                             <li className="fs-six n5-color leading-[2] li-responsive">Public Relations Teamwork</li>
+                             <li className="fs-six n5-color leading-[2] li-responsive">Time Management</li>
+                             <li className="fs-six n5-color leading-[2] li-responsive">LeaderShip</li>
+                                               <li className="fs-six n5-color leading-[2] li-responsive">Effective Communication</li>
+                             <li className="fs-six n5-color leading-[2] li-responsive">Critical THinking</li>
                                   </ul>
  <div className="flex items-center gap-3 pt-5">
         <div className="w-1 h-12 bg-blue-600"></div>
-        <h2 className="text-3xl md:text-4xl font-semibold text-blue-600">
+        <h2 className="text-2xl md:text-4xl font-semibold text-blue-600">
           Eductions
         </h2>
         <PiStudentFill size={25} className="text-blue-600"/>
       </div>
-       <p className="text-gray-700 pt-5 mt-5 text-lg">Full-Stack Web Development (JavaScript & TypeScript)
+       <p className="text-gray-700 pt-5 mt-5 text-lg text-justify li-responsive">Full-Stack Web Development (JavaScript & TypeScript)
 
 | 2023 - 2025</p>
-               <ul className="list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-xl pt-5 ps-5 mt-5">
-      <li className="fs-seven n5-color leading-[2]">
+               <ul className="list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-xl pt-5 ps-5 mt-5 text-justify">
+      <li className="fs-seven n5-color leading-[2] li-responsive">
 Front-End: Next.js, React.js, Zustand, Tailwind CSS
       </li>
-      <li className="fs-seven n5-color leading-[2]">
+      <li className="fs-seven n5-color leading-[2] li-responsive">
  Back-End: NestJS, Node.js, Express.js, MongoDB
       </li>
-      <li className="fs-seven n5-color leading-[2]">
+      <li className="fs-seven n5-color leading-[2] li-responsive">
         Validation & Data Modeling: Zod, DTO, Discriminators
       </li>
-       <li className="fs-seven n5-color leading-[2]">
+       <li className="fs-seven n5-color leading-[2] li-responsive">
   Authentication & Security: JWT, Cookies, Guards
       </li>
-       <li className="fs-seven n5-color leading-[2]">
+       <li className="fs-seven n5-color leading-[2] li-responsive">
      Version Control: Git & GitHub (branches, pull requests, merges)
       </li>
-       <li className="fs-seven n5-color leading-[2]">
+       <li className="fs-seven n5-color leading-[2] li-responsive">
         Deployment: Vercel, Render, Netlify, and MongoDB Atlas
       </li>
-       <li className="fs-seven n5-color leading-[2]">
+       <li className="fs-seven n5-color leading-[2] li-responsive">
     Real-Time Communication: WebSocket, Socket.io (emit, on, broadcast)
       </li>
-        <li className="fs-seven n5-color leading-[2]">
+        <li className="fs-seven n5-color leading-[2] li-responsive">
    Architecture: Modular design, Clean code, Reusable components
       </li>
-        <li className="fs-seven n5-color leading-[2]">
+        <li className="fs-seven n5-color leading-[2] li-responsive">
 UI/UX Design: Responsive design, accessibility, usability
       </li>
      </ul>
-      <div className="flex items-center gap-3 pt-5">
+      <div className="flex items-center gap-3 pt-5 li-responsive">
         <div className="w-1 h-12 bg-blue-600"></div>
-        <h2 className="text-3xl md:text-4xl font-semibold text-blue-600">
+        <h2 className="text-2xl md:text-4xl font-semibold text-blue-600">
           Languages
         </h2>
         <FaLanguage  size={20} className="text-blue-600"/>
       </div>
-      <ul className="pt-5 mt-5 ps-5">
-     <li className="fs-seven n5-color leading-[2]">
+      <ul className="pt-5 mt-5 ps-5 text-justify li-responsive">
+     <li className="fs-seven n5-color leading-[2] li-responsive">
       Frensh (Native)
       </li>
-       <li className="fs-seven n5-color leading-[2]">
+       <li className="fs-seven n5-color leading-[2] li-responsive">
     English (Professional)
       </li>
-        <li className="fs-seven n5-color leading-[2]">
+        <li className="fs-seven n5-color leading-[2] li-responsive">
 Sweden (Intermediate)
       </li>
             </ul>
         <div className="flex items-center gap-4 pt-5 ps-2">
         <div className="w-1 h-12 bg-blue-600"></div>
-        <h2 className="text-3xl md:text-4xl font-semibold text-blue-600 tracking-wider">
+        <h2 className="text-2xl md:text-4xl font-semibold text-blue-600 tracking-wider">
           Interests
         </h2>
         <GiHobbitDwelling   size={20} className="text-blue-600 ms-1"/>
       </div>
-      <ul className="list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-xl pt-5 ps-5 mt-5">
-              <li className="fs-seven n5-color leading-[2]">
+      <ul className="text-justify list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-xl pt-5 ps-5 mt-5">
+              <li className="fs-seven n5-color leading-[2] li-responsive">
       Coaching
       </li>
-       <li className="fs-seven n5-color leading-[2]">
+       <li className="fs-seven n5-color leading-[2] li-responsive">
     Volley ball sports
       </li>
-        <li className="fs-seven n5-color leading-[2]">
+        <li className="fs-seven n5-color leading-[2] li-responsive">
 Nature
       </li>
-       <li className="fs-seven n5-color leading-[2]">
+       <li className="fs-seven n5-color leading-[2] li-responsive">
 Traveling
       </li>
       </ul>  

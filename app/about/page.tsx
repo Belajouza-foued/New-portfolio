@@ -71,7 +71,7 @@ export default function About() {
           HI, I'M A FREELANCER
         </span>
 
-        <h1 className="text-4xl md:text-7xl font-bold mt-2 ps-5 ms-5 mb-3 leading-tight text-center">
+        <h1 className="text-3xl md:text-7xl font-bold mt-2 ps-5 ms-5 mb-3 leading-tight text-center">
           <span className="text-blue-600 ps-5 ms-5">{displayText}</span>
           <span className="animate-blink">|</span>
         </h1>

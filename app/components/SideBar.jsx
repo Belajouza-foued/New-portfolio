@@ -26,16 +26,17 @@ export default function SideBar() {
     gap-3">
       
       {/* Photo de profil */}
+       <div className="md:flex-col flex-col itmes-center justify-center mx-auto side-res">
       <Image
         src="/fofo-2.jpg"
         width={50}
         height={50}
         alt="Photo de profil"
-        className="profile-img md:w-[100px]"
+        className="profile-img md:w-[80px]"
       />
 
       {/* Nom et titre */}
-      <h2 className=" name text-center md:text-2xl text-xs font-bold text-gray-800">Foued Belajouza</h2>
+           <h2 className="name text-center md:text-2xl font-bold text-gray-800">Foued Belajouza</h2>
       <p className="title-text text-left md:text-left mb-4">Full Stack Developer</p>
 
       <hr className="separator w-full mb-4" />
@@ -43,29 +44,30 @@ export default function SideBar() {
       {/* Menu */}
       <nav className="menu md:w-full flex flex-col items-start gap-6">
         <Link href="/about" className="nav-link flex items-center gap-2">
-          <FiUser className="icon" />
+          <FiUser className="icon-s" />
             <span className="about-text">About Me</span>
         </Link>
-        <Link href="/projects" className="nav-link flex items-center gap-2">
-          <FiFolder className="icon" /> Projects
+        <Link href="/resume" className="nav-link flex items-center gap-2">
+          <FiFolder className="icon-s" /> Resume
         </Link>
         <Link href="/blogs" className="nav-link flex items-center gap-2">
-          <FiFileText className="icon" /> Blogs
+          <FiFileText className="icon-s" /> Blogs
         </Link>
-        <Link href="/portfolio" className="nav-link flex items-center gap-2">
-          <FiGrid className="icon" /> Portfolio
+        <Link href="/" className="nav-link flex items-center gap-2">
+          <FiGrid className="icon-s" /> Portfolio
         </Link>
         <Link href="/contact" className="nav-link flex items-center gap-2">
-          <FiMail className="icon" /> Contact
+          <FiMail className="icon-s" /> Contact
         </Link>
       </nav>
-
+  </div>
             <Link
-    href="/#contact"
+    href="/contact"
     className="hire-btn mt-auto flex items-center justify-center gap-2 py-3 font-semibold"
   >
     Hire Me <FiArrowRight className="w-5 h-5 p-0" />
   </Link>
+
     </aside>
   );
 }

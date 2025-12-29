@@ -14,7 +14,7 @@ export default function Contact() {
       <div className="grid grid-cols-12">
 
         {/* SIDEBAR → col-3 desktop, hidden mobile */}
-        <aside className="hidden lg:block lg:col-span-3 h-screen">
+        <aside className="lg:col-span-3 h-screen">
           <SideBar />
         </aside>
 

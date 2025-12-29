@@ -1,3 +1,28 @@
 .group {
     border-radius: 15px 15px 0px 0px;
 }
+
+@media (max-width :768px) {
+.button-res {
+    width: 200px;
+    transform: translatex(-60px);
+}
+.button-2 {
+    font-size: 10px ;
+}
+.work-transform {
+    transform: translateX(-30px);
+}
+.foued-contact {
+    transform: translateX(-30px);
+}
+}
+@media(max-width: 768px) {
+    .li-responsive {
+        font-size: 10px !important;
+    }
+    .cv-fofo {
+        transform: translateX(-10px);
+    }
+    
+}

@@ -106,11 +106,11 @@ export default function Home() {
 
     {/* Projets */}
 {/* Projets */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:max-w-6xl max-w-4xl">
   {projects.map((project) => (
     <div key={project.id} className="project-card border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
 
-      <Link href={project.href} className="block relative group w-full h-64 md:h-70 lg:h-96">
+      <Link href={project.href} className="block relative group md:w-full h-32 w-48 md:h-70 lg:h-96 mx-auto">
    
         {/* Image principale */}
         <Image2
