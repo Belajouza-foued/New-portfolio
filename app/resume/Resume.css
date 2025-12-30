@@ -1,14 +1,20 @@
 .group {
     border-radius: 15px 15px 0px 0px;
 }
+ .li-responsive {
+     font-size: 16px;
+     font-weight: 600;
+       
+           }
 
 @media (max-width :768px) {
 .button-res {
     width: 200px;
-    transform: translatex(-60px);
+    transform: translatex(-30px);
 }
 .button-2 {
     font-size: 10px ;
+    max-width: 150px;
 }
 .work-transform {
     transform: translateX(-30px);
@@ -20,7 +26,7 @@
 @media(max-width: 768px) {
     .li-responsive {
         font-size: 10px !important;
-    }
+           }
     .cv-fofo {
         transform: translateX(-10px);
     }

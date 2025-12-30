@@ -2,23 +2,14 @@
 .bg-white {
   border-radius: 5%;
 }
-.user-bg {
-  width: 400px;
-  height: 400px;
-  background-color: rgba(var(--p1), 1);
-  animation: rotatedBg 10s infinite linear;
-    border-radius: 5%;
-  
-}
+.mon-image-profile {
 
-@keyframes rotatedBg {
-  0%, 100% {
-    transform: rotate(11.163deg);
-  }
-  50% {
-    transform: rotate(-11.163deg);
-  }
-}
+
+   }
+   .container-touch {
+  
+   }
+
 .user-img {
   position: absolute;
   left: 25px;
@@ -28,9 +19,16 @@
   z-index: 0;
   border-radius: 10px;
  }
- .profile-image {
-  width: 200px;
-  height: 250px;
+ .mon-image {
+
+ }
+ @media (max-width: 768px) {
+  .mon-image {
+    width: 80px;
+    height: 100px;
+        }
+  
+ 
  }
 
 

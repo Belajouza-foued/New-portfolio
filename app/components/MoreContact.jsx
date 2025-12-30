@@ -8,7 +8,7 @@ export default function MoreContact({className}) {
   return (
     <div className="mt-5 pb-2 text-center">
       {/* Titre */}
-      <p className="underline underline-offset-4 text-xl leading-7 text-blue-700">
+      <p className="underline underline-offset-4 text-xs md:text-xl leading-7 text-blue-700">
        For more information, click this button:
       </p>
 
@@ -29,7 +29,7 @@ export default function MoreContact({className}) {
         onClick={() => setShowMore(!showMore)}
         className="mt-3 px-4 py-2 border border-blue-600 text-blue-600
                    rounded-lg hover:bg-blue-600 hover:text-white 
-                   transition font-medium"
+                   transition font-medium more-contact"
       >
         {showMore ? "Less Contact" : "More Contact"}
       </button>

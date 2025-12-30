@@ -12,7 +12,7 @@
 .sidebar {
   transform: translateY(10px);
  border-radius: 25px;
-max-height: 280px;
+max-height: 250px;
 padding-bottom: 0px;
 margin-bottom: 10px !important;
   }
@@ -41,7 +41,7 @@ margin-bottom: 10px !important;
   font-size: 10px !important;
  }
  .separator {
- transform: translateY(-20px);
+ transform: translateY(-10px);
 }
 }
 
@@ -56,9 +56,13 @@ margin-bottom: 10px !important;
 .title-text {
   font-size: 16px;
   font-weight: 500;
-  color: rgb(var(--n4));
+  color: blue;
   margin-bottom: 15px;
 }
+.title-text:hover {
+    color: rgb(var(--p1)); 
+}
+
 
 /* Séparateur */
 .separator {
@@ -76,8 +80,11 @@ margin-bottom: 10px !important;
 }
 @media (max-width: 768px) {
   .menu {
- padding: 7px;
+ padding: 0px;
 }
+.title-text {
+  transform: translateY(-20px);
+  }
 }
 .nav-link {
   display: flex;
@@ -159,6 +166,9 @@ line-height: 10px;
     max-height: 25px;
     font-size: 8px;
       } 
+      .more-contact {
+        font-size: 10px;
+      }
 }
 
 

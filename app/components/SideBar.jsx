@@ -37,7 +37,7 @@ export default function SideBar() {
 
       {/* Nom et titre */}
            <h2 className="name text-center md:text-2xl font-bold text-gray-800">Foued Belajouza</h2>
-      <p className="title-text text-left md:text-left mb-4">Full Stack Developer</p>
+      <Link href="/resume" className="title-text text-left md:text-left mb-4">Full Stack Developer</Link>
 
       <hr className="separator w-full mb-4" />
 

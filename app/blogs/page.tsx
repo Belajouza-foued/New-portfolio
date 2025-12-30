@@ -24,7 +24,7 @@ export default function Blog() {
    {
     id: 12,
       title: "Zod / Validation",
-    images: ["/assets/blog5.png","/assets/blog6.png"],
+    images: ["/assets/blog3.png","/assets/blog6.png"],
     href: "/contact",
     description: "I use to validate my forms and DTOs on both the backend and frontend.It helps me prevent errors by defining clear, type-safe schemas.like Zod et Zustand"
   },
@@ -78,7 +78,7 @@ export default function Blog() {
       <div className="grid grid-cols-12">
 
         {/* SIDEBAR → col-3 desktop, hidden mobile */}
-        <aside className="hidden lg:block lg:col-span-3 h-screen">
+        <aside className="lg:block lg:col-span-3 h-screen">
          <SideBar />
         </aside>
 
@@ -109,7 +109,7 @@ export default function Blog() {
     <div key={imgBlog.id} className="group border rounded-lg overflow-hidden shadow hover:shadow-lg transition w-[200px] md:w-[250px] max-w-[250px]">
 
            {/* Image principale */}
-        <div className=" group relative w-[200px] h-[100px] overflow-hidden md:w-[250px] md:h-[150px]">
+        <div className=" group-img relative h-[100px] overflow-hidden md:w-[250px] md:h-[150px]">
         <Image5
           src={imgBlog.images[0]}
           alt={imgBlog.title}
@@ -134,7 +134,7 @@ export default function Blog() {
         <Link href={imgBlog.href} className="text-sm font-semibold text-gray-800 hover:text-blue-500 block ps-2">
           {imgBlog.title}
         </Link>
-              <p className="text-justify text-[10px] md:text-[12px] tracking-wide max-w-[170px] md:max-w-[220px] ps-2 pb-3">
+              <p className="text-justify text-[10px] md:text-[12px] md:tracking-tight tracking-tight max-w-[150px] md:max-w-[220px] ps-2 pb-3 leading-[2]">
 {imgBlog.description}
   </p>
       </div>     

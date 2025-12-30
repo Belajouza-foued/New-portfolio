@@ -24,6 +24,17 @@ const projects1 = [
   },
       
 ];
+const videos = [
+  { id: 1, src: "/videos/video-cap.mp4" },
+  { id: 2, src: "/videos/video-1.mp4" },
+  { id: 3, src: "/videos/video-2.mp4" },
+  { id: 4, src: "/videos/video-3.mp4" },
+  { id: 5, src: "/videos/video-4.mp4" },
+  { id: 6, src: "/videos/video-5.mp4" },
+    { id: 7, src: "/videos/video-6.mp4" },
+     { id: 8, src: "/videos/dribble-photo.mp4" },
+       { id: 9, src: "/videos/video-7.mp4" },
+];
 export default function About() {
   // Texte dynamique
   const typeArray = ["Developer", "Designer"];
@@ -71,7 +82,7 @@ export default function About() {
           HI, I'M A FREELANCER
         </span>
 
-        <h1 className="text-3xl md:text-7xl font-bold mt-2 ps-5 ms-5 mb-3 leading-tight text-center">
+        <h1 className="text-4xl md:text-7xl font-bold mt-2 ps-5 ms-5 mb-3 leading-tight text-center">
           <span className="text-blue-600 ps-5 ms-5">{displayText}</span>
           <span className="animate-blink">|</span>
         </h1>
@@ -86,15 +97,15 @@ export default function About() {
 
         <div className="flex flex-wrap items-center gap-3 md:gap-6 mt-4 md:mt-8 lg:pl-40">
           <Link
-            href="/portfolio"
-            className="bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-700 transition"
+            href="/"
+            className="bg-blue-600 text-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-blue-600 transition"
           >
             View Portfolio →
           </Link>
 
        <Link
   href="/resume"
-  className="border border-blue-600 text-blue-600 px-6 py-3 rounded-full font-medium hover:bg-blue-50 transition flex items-center gap-2"
+  className="border border-blue-600 text-blue-600 px-6 py-3 rounded-full font-medium hover:bg-blue-600 hover:text-white transition flex items-center gap-2"
 >
   View Resume
     <svg
@@ -116,16 +127,16 @@ export default function About() {
       <div className="flex flex-col justify-end items-end gap-6">
 
         {/* IMAGE */}
-        <div className="profile-image w-50 animate-slideInRight overflow-hidden rounded-xl shadow-lg lg:-ml-20">
+        <div className="mon-image animate-slideInRight overflow-hidden rounded-xl shadow-lg lg:-ml-20 w-48 h-56">
           <img
             src="/images/mon-image.jpg"
             alt="user"
-            className="w-50 object-cover rounded-xl"
+            className="mon-image-profile object-contain rounded-xl"
           />
         </div>
 
         {/* TEXT ON RIGHT */}
-        <div className="flex flex-col  leading-[2] items-center px-10 text-center">
+        <div className="flex flex-col  leading-[2] items-center px-8 text-center">
           <h1 className="text-2xl font-bold user-title tracking-wide text-center">Foued Belajouza</h1>
           <h5 className="text-gray-600 mt-1  text-center">
             Full-Stack Developer • UI/UX Designer
@@ -496,28 +507,28 @@ export default function About() {
   </div>
 </div>
 </section>
-<section className="w-full mt-[100px]
+<section className=" me-5 w-full mt-20
     ml-0                
-    md:ml-[320px]   next-project
+    md:ml-[300px]   next-project
     py-28 
-       bg-[url('/images/bg.png')] 
+    bg-[url('/images/bg.png')] 
     bg-no-repeat 
     bg-end 
     bg-cover 
     bg-fixed">
   <div
-    className=" container mx-auto px-4 flex flex-wrap justify-between items-center gap-4 md:gap-10 lg:pl-20"
+    className="container-touch container mx-auto md:px-20 px-5 flex flex-wrap justify-between items-center gap-6  md:gap-10 md:pl-20 md:max-w-full max-h-[180px]"
   >
     {/* Texte */}
     <div
       data-aos="zoom-in-left"
       className="max-w-xl"
     >
-      <h3 className="text-3xl md:text-4xl font-semibold  text-white/80 mb-3 md:mb-5">
+      <h3 className="text-sm md:text-2xl font-semibold  text-white/80 mb-3 md:mb-5 text-justify hover:text-blue-600">
         Let’s Work together on your next Project
       </h3>
 
-      <p className="text-sm md:text-base  text-white/80">
+      <p className="text-xs md:text-base  text-white/80">
         I am available for freelance projects. Hire me and get your
         project done.
       </p>
@@ -527,7 +538,7 @@ export default function About() {
     <a
       data-aos="zoom-in-right"
       href="/contact"
-      className="primary-btn  bg-blue-600    hover:bg-blue-700  font-medium px-5 md:px-8 py-3 md:py-4 rounded-full flex items-center gap-2 h-fit text-white transition"
+      className="primary-btn text-xs bg-blue-600    hover:bg-white hover:text-blue-600 font-medium px-5 md:px-8 px-6 py-2 md:py-4 rounded-full flex items-center gap-2 h-fit text-white transition"
     >
    Let’s get in touch<FiArrowRight className="w-5 h-5" />
     </a>
@@ -556,7 +567,7 @@ export default function About() {
     <a
       data-aos="zoom-in-right"
       href="/contact"
-      className="primary-btn bg-blue-600 hover:bg-blue-700 font-medium px-5 md:px-8 py-3 md:py-4 rounded-full flex items-center gap-2 h-fit text-white transition"
+      className="primary-btn bg-blue-600 hover:bg-white hover:text-blue-600 font-medium px-5 md:px-8 py-3 md:py-4 rounded-full flex items-center gap-2 h-fit text-white transition"
     >
       View Portfolio
       <FiArrowRight className="w-5 h-5" />
@@ -564,119 +575,55 @@ export default function About() {
 
   </div>
   </div>
- <section
-  className="w-full
+<section
+  className="
+    w-full
     ml-0 md:ml-[320px]
-    next-project py-10
-    bg-no-repeat bg-end bg-cover bg-fixed"
+    py-10
+    bg-no-repeat bg-end bg-cover bg-fixed
+  "
 >
-   {/* Vidéo */}
- <div className=" grid grid-cols-1  md:grid-cols-2 gap-6">
-  {/* VIDEO 1 */}
-  <div className="hover-video-card w-full md:w-1/2 ">
-    <div className="media-wrapper">
-      <video
-        src="/videos/video-cap.mp4"
-        className="w-full rounded-lg"
-        autoPlay
-        muted
-        loop
-        playsInline
-      ></video>
-    </div>
-    <div className="flex flex-wrap gap-2 items-center pt-2">
-   <ButtonLink className="" />
-   </div>
+  <div className="
+    grid
+    grid-cols-1
+    sm:grid-cols-2
+    lg:grid-cols-3
+    gap-6
+    max-w-6xl
+  ">
+    {videos.map((video) => (
+      <div
+        key={video.id}
+        id={`video-${video.id}`}
+        className="hover-video-card group"
+      >
+        {/* Vidéo responsive */}
+        <div className="relative w-full aspect-video overflow-hidden rounded-lg">
+          <video
+            src={video.src}
+            className="
+              absolute inset-0
+              w-full h-full
+              object-cover
+              transition-transform duration-300
+              group-hover:scale-105
+            "
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        </div>
+
+        {/* Bouton */}
+        <div className="flex flex-wrap gap-2 items-center pt-3">
+          <ButtonLink />
+        </div>
+      </div>
+    ))}
   </div>
-  
-  {/* VIDEO 2 */}
-  {projects1.map((project1) => (
-    <div key={project1.id} className="hover-video-card w-full md:w-1/2 ">
-    <div className="media-wrapper">
-      <video
-        src="/videos/video-3.mp4"
-        className="w-full rounded-lg"
-        autoPlay
-        muted
-        loop
-        playsInline
-      ></video>
-    </div> 
-    <div className="flex flex-wrap gap-2 items-center pt-2 ">
-   <ButtonLink className="" />
-   </div>
-    </div>
-   ))}
-
-  {/* VIDEO 3 */}
-  <div className="hover-video-card  w-full md:w-1/2 ">
-    <div className="media-wrapper">
-      <video
-        src="/videos/video-2.mp4"
-        className="w-full rounded-lg"
-        autoPlay
-        muted
-        loop
-        playsInline
-      ></video>
-    </div>
-    <div className="flex flex-wrap gap-2 items-center pt-2">
-   <ButtonLink className="" />
-   </div>
-  </div>
-  {projects1.map((project1) => (
-    <div key={project1.id} className="hover-video-card pt-2">
-    <div className="media-wrapper">
-      <video
-        src="/videos/video-3.mp4"
-        className="w-full rounded-lg"
-        autoPlay
-        muted
-        loop
-        playsInline
-      ></video>
-    </div> 
-    <div className="flex flex-wrap gap-2 items-center pt-2">
-   <ButtonLink className="" />
-   </div>
-    </div>
-   ))}
-    <div className="hover-video-card w-full md:w-1/2 ">
-    <div className="media-wrapper">
-      <video
-        src="/videos/video-1.mp4"
-        className="w-full rounded-lg media-1"
-        autoPlay
-        muted
-        loop
-        playsInline
-      ></video>
-    </div>
-    <div className="flex flex-wrap gap-2 items-center -mt-3">
-   <ButtonLink className="" />
-   </div>
-       </div>
-        <div className="hover-video-card w-full md:w-1/2">
-    <div className="media-wrapper">
-      <video
-        src="/videos/video-1.mp4"
-        className="w-full rounded-lg media-1"
-        autoPlay
-        muted
-        loop
-        playsInline
-      ></video>
-    </div>
-    <div className="flex flex-wrap gap-2 items-center -mt-3">
-   <ButtonLink className="" />
-   </div>
-       </div>
-       
-</div>
-
-    
-
 </section>
+
    <div data-aos="zoom-in-left" className="pt-5 mt-3  max-w-4xl grid-cols-1 md:grid-cols-1 w-full
     ml-0 md:ml-[320px]
     next-project">

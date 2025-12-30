@@ -1,0 +1,6 @@
+@media (max-width :768px) {
+ .group {
+    transform: translateX(-15px);
+    max-width: 180px;
+    }
+}

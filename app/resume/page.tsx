@@ -85,11 +85,13 @@ export default function Resume() {
   </div>
 
   <p className="
-     text-center text-justify
+     text-justify
      md:text-base
      text-gray-600
        text-xs 
       leading-relaxed
+      md:w-full
+      w-[150px]
   ">
     I’m a Full-Stack Web Developer and Web Designer focused on crafting
     clean, user-friendly. I’m passionate
@@ -121,12 +123,12 @@ export default function Resume() {
       <div className="pl-4 pt-5 text-justify md:w-full w-[150px]">
      <ul className="">
       <span className="text-blue-700 pt-5 mt-5 text-xl ">Junior Developer:</span>
-      <p className="text-gray-500 text-xs md:text-base pt-5 mt-5">
+      <p className="text-gray-500 text-xs md:text-base pt-2">
 Passionate about web development and design, I specialize in Full-Stack Development using modern frameworks like <strong>Next.Js</strong> and <strong>Nest.Js </strong>I build high-performance and scalable web applications with a strong focus on clean architecture and maintainability. My expertise includes <strong>Zod</strong> for schema validation,
 <strong>Zustand</strong>for state management, and <strong>Dto</strong> patterns to ensure reliable data flow between client and server.
       </p>
      </ul>
-     <ul className="list-disc text-gray-500 md:text-rebase text-xs  md:leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5 w-[150px] md:w-full">
+     <ul className="list-disc text-gray-500 md:text-base text-xs  md:leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5 w-[150px] md:w-full">
       <li>
         Developed scalable RESTful APIs using NestJS, MongoDB, and discriminators for structured data models.
       </li>
@@ -155,7 +157,7 @@ Applied SEO and digital marketing strategies to boost visibility and user engage
      <span className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">BackEnd Developer</span>
       <p className="text-gray-500 md:text-base text-xs pt-5 mt-5">Specialized in developing secure, modular, and scalable backends using NestJS and MongoDB. I implement clean architecture principles with DTOs, discriminators, and validation layers (Zod) to ensure data integrity and performance.</p>
       </ul>
-<ul className= "list-disc text-gray-500 text-xs md:text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+<ul className= "list-disc text-gray-500 text-xs md:text-base leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
        <li>
 Built RESTful and modular APIs using NestJS and Express-compatible middleware.
       </li>
@@ -385,10 +387,10 @@ Improved performance and SEO through server-side rendering (SSR) and static site
         </h2>
         <PiStudentFill size={25} className="text-blue-600"/>
       </div>
-       <p className="text-gray-700 pt-5 mt-5 text-lg text-justify li-responsive">Full-Stack Web Development (JavaScript & TypeScript)
+       <p className="text-gray-700 pt-5 mt-5 text-base text-justify li-responsive">Full-Stack Web Development (JavaScript & TypeScript)
 
 | 2023 - 2025</p>
-               <ul className="list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-xl pt-5 ps-5 mt-5 text-justify">
+               <ul className="list-disc text-gray-500 text-base leading-[2] font-thin marker:text-gray-600 marker:text-xl pt-5 ps-5 mt-5 text-justify">
       <li className="fs-seven n5-color leading-[2] li-responsive">
 Front-End: Next.js, React.js, Zustand, Tailwind CSS
       </li>
@@ -472,27 +474,28 @@ Traveling
 <div className="flex flex-nowrap justify-center items-center">
   <hr className="border-gray-300 w-full border-t mt-10 pt-10"></hr>
 </div>
-<section className="bg-white p-10 rounded-xl mt-10">
+<section className="bg-white p-10 rounded-xl mt-10 md:w-full w-[180px] -ml-10 sm:-ml-6
+md:ml-0">
   <div className="flex flex-wrap justify-center md:justify-between gap-6">
   <div className="flex items-center gap-3">
-               <h2 className="text-sm md:text-sm font-bold text-gray-500">
+               <h2 className="text-xs md:text-sm font-bold text-gray-500">
           github.com/foued-belajouza
         </h2>
         <div className="bg-gray-100 p-2 rounded-full hover:bg-blue-400">
         <FaGithub className="text-blue-600 hover:text-white transition" size={15}/>
          </div>
          </div>
-   <div className="flex items-center gap-3 ps-10">
-               <h2 className="text-sm md:text-sm font-bold text-gray-500">
+   <div className="flex items-center gap-3">
+               <h2 className="text-xs md:text-sm font-bold text-gray-500">
      Linkedin.com/in
         </h2>
          <div className="bg-gray-100 p-2 rounded-full hover:bg-blue-400">
 <FaLinkedin className="text-blue-600 hover:text-white transition" size={20}/>
 </div>
 </div>  
- <div className="flex items-center gap-3 ps-10">
+ <div className="flex items-center gap-3 ps-5">
   
-   <Link href="/contact" className="text-sm md:text-sm font-bold text-gray-500 hover:text-blue-600 inline-flex gap-3">
+   <Link href="/contact" className="text-xs md:text-sm font-bold text-gray-500 hover:text-blue-600 inline-flex gap-3">
 email <span className="p-1 bg-gray-100 rounded-full hover:bg-blue-400"><EnvelopeOpen className="text-blue-600 hover:text-white transition" size={20}/></span>
  </Link>   
 </div>   

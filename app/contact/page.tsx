@@ -3,24 +3,17 @@ import Link from "next/link";
 import MoreContact from "../components/MoreContact"
 import { DeviceMobileCamera,Compass  } from "phosphor-react";
 import SideBar from "../components/SideBar";
-
-
-
 export default function Contact() {
   return (
-     <div className="min-h-screen bg-gray-100">
-
-      {/* LAYOUT GLOBAL */}
-      <div className="grid grid-cols-12">
-
-        {/* SIDEBAR → col-3 desktop, hidden mobile */}
-        <aside className="lg:col-span-3 h-screen">
-          <SideBar />
-        </aside>
-
+<div className="min-h-screen bg-gray-100">
+{/* LAYOUT GLOBAL */}
+<div className="grid grid-cols-12">
+{/* SIDEBAR → col-3 desktop, hidden mobile */}
+ <aside className="lg:block lg:col-span-3 h-screen">
+<SideBar />
+B </aside>
         {/* CONTENU PRINCIPAL → col-9 desktop / col-12 mobile */}
         <main className="col-span-12 lg:col-span-9  lg:ml-10">
-
           {/* TITRE */}
           <section className="text-center max-w-3xl mx-auto mt-10 lg:ml-20 ps-5  ml-0 md:ml-10 px-5">
             <h1 className="text-3xl sm:text-4xl text-gray-700 font-bold">
@@ -41,14 +34,14 @@ export default function Contact() {
             data-aos="zoom-in-left"
             className="max-w-5xl mx-auto mt-10 flex flex-col md:flex-row items-center ps-5"
           >
-            <div className="flex items-center gap-3 lg:-ml-20">
-              <div className="w-1 h-24 bg-blue-600"></div>
-              <h2 className="text-2xl md:text-3xl  lg:text-3xl font-semibold text-gray-800">
+            <div className="flex items-center gap-3 lg:-ml-20 pe-1">
+              <div className=" bg-blue-600 w-1 h-12 md:h-24 "></div>
+              <h2 className="text-xl pe-1 md:text-3xl  lg:text-3xl font-semibold text-gray-800">
                 Contact Details
               </h2>
             </div>
 
-            <p className="text-gray-600 text-sm flex-1 ps-10 tracking-wide">
+            <p className="text-gray-600 md:text-sm text-xs flex-1 ps-10 tracking-wide mt-2">
               If you are going to use a passage of Lorem Ipsum, be sure there isn't anything embarrassing hidden in the text.
             </p>
           </section>
@@ -61,13 +54,13 @@ export default function Contact() {
               <DeviceMobileCamera size={50} className="text-blue-600" />
               <div>
                 <span className="font-semibold">Phone</span>
-                <a href="tel:+21658860181" className="block text-gray-700">
+                <a href="tel:+21658860181" className="block text-gray-700 pe-1">
                   +216 58 860 181
                 </a>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 justify-center">
+            <div className="flex items-center locatio, gap-4 justify-center md:ml-0 -ml-12 sm:-ml-3">
               <div className="w-[2px] h-20 bg-blue-400"></div>
               <Compass size={50} className="text-blue-600" />
               <div>
@@ -76,7 +69,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 justify-center">
+            <div className="flex items-center gap-4 justify-center md:ml-0 -ml-10 sm:-ml-3">
               <div className="w-[2px] h-20 bg-blue-400"></div>
               <Compass size={50} className="text-blue-600" />
               <div>
@@ -105,7 +98,7 @@ export default function Contact() {
               Send me a message — I'll respond as soon as possible.
             </p>
 
-            <form className="bg-white p-6 rounded-2xl shadow-lg border space-y-4">
+            <form className="bg-white mx-auto p-6 rounded-2xl shadow-lg border space-y-4 md:-ml-5 md:w-full  w-48 h-81">
               <input type="text" placeholder="Your Name*" className="w-full p-3 rounded-lg border focus:ring-2 focus:ring-blue-500" />
               <input type="email" placeholder="Email*" className="w-full p-3 rounded-lg border focus:ring-2 focus:ring-blue-500" />
               <input type="number" placeholder="Phone*" className="w-full p-3 rounded-lg border focus:ring-2 focus:ring-blue-500" />
