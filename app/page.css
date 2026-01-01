@@ -1,34 +1,19 @@
 /* SECTION GLOBALE */
 .section-projects {
   text-align: center;
-  margin: 40px auto;
-  padding: 50px;
+  margin: 70px auto;
+  padding: 60px;
   max-width: 100%;
   border-bottom: 1px solid #d1d1d1;
 }
 
 /* TITRE */
 .title-projects {
-  font-size: 2rem;      /* Mobile */
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 15px;
-margin: 0 auto;
-display: flex;
-justify-content: center;
+ 
 }
 
 /* PARAGRAPHE */
-.paragraph-projects {
-  color: #666;
-max-width: 700px !important;
-  margin: 0 auto !important;           /* centre horizontalement */
-  font-size: 1rem;          /* Mobile */
-  line-height: 1.6;
-  display: flex;
-  text-align: center;   
-justify-content: start;
-}
+
 
 /* BOUTON */
 .btn-hire {
@@ -50,20 +35,32 @@ justify-content: start;
 /* ============================
    MEDIA QUERY : TABLET + DESKTOP
    ============================ */
-@media (min-width: 768px) {
+   .link-portfolio {
+  padding: 4px 12px;
+  font-size: 14px;
+  background-color: #e5e7eb; /* gray-200 */
+  color: #374151; /* gray-700 */
+  border-radius: 9999px;
+  display: inline-block;
+}
+@media (max-width: 768px) {
 
-  .title-projects {
-    font-size: 1.8rem;  /* plus petit sur desktop comme tu veux */
-    text-align: center;
-    margin-left: 30px;
-  }
-
-  .paragraph-projects {
-    font-size: 1.1rem;
-    text-align: left;
-    margin-left: 20px;
+.link-portfolio{
+  padding: 2px 8px !important;
+    font-size: 10px !important;
+    transform: translateX(50px);
  
   }
+  .link-title {
+    transform: translateX(60px);
+    font-size: 12px;
+  }
+  .web-app {
+    transform: translateX(30px);
+   
+      }
+
+ 
 
   .btn-hire {
     margin-left: -40px;

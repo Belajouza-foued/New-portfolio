@@ -47,11 +47,11 @@ export default function Resume() {
       {/* Bouton */}
      <div className="flex flex-nowrap justify-center items-center foued-contact">
        <div className="w-0.5 h-24 bg-gray-600 opacity-50 decoration-2 me-2"></div>
-      <ul className=" text-gray-500 text-xs md:text-sm  leading-[1.5] font-thin pl-4 -ml-10 sm:ml-6 md:ml-0
+      <ul className=" text-gray-600 text-xs md:text-sm  leading-[1.5]  pl-4 -ml-10 sm:ml-6 md:ml-0
 ">
          <li className="flex items-center gap-2">
        <FaPhoneAlt className="text-blue-500 hover:text-gray-600"/>
-     <span>+216 58 860 181</span>
+     <span className="">+216 58 860 181</span>
       </li>
          <li className="flex items-center gap-2">
             <MdAttachEmail  className="text-blue-500"/>
@@ -92,6 +92,7 @@ export default function Resume() {
       leading-relaxed
       md:w-full
       w-[150px]
+      para-resume
   ">
     I’m a Full-Stack Web Developer and Web Designer focused on crafting
     clean, user-friendly. I’m passionate
@@ -123,12 +124,12 @@ export default function Resume() {
       <div className="pl-4 pt-5 text-justify md:w-full w-[150px]">
      <ul className="">
       <span className="text-blue-700 pt-5 mt-5 text-xl ">Junior Developer:</span>
-      <p className="text-gray-500 text-xs md:text-base pt-2">
+      <p className="text-gray-600 text-xs md:text-base pt-2">
 Passionate about web development and design, I specialize in Full-Stack Development using modern frameworks like <strong>Next.Js</strong> and <strong>Nest.Js </strong>I build high-performance and scalable web applications with a strong focus on clean architecture and maintainability. My expertise includes <strong>Zod</strong> for schema validation,
 <strong>Zustand</strong>for state management, and <strong>Dto</strong> patterns to ensure reliable data flow between client and server.
       </p>
      </ul>
-     <ul className="list-disc text-gray-500 md:text-base text-xs  md:leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5 w-[150px] md:w-full">
+     <ul className="list-disc text-gray-600 md:text-base text-xs  md:leading-[2] marker:text-gray-600 marker:text-l pt-5 w-[150px] md:w-full">
       <li>
         Developed scalable RESTful APIs using NestJS, MongoDB, and discriminators for structured data models.
       </li>
@@ -140,9 +141,9 @@ Passionate about web development and design, I specialize in Full-Stack Developm
 
     <ul className="pt-5 mt-5 ">
      <span className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">Web Designer</span>
-      <p className="text-gray-500 md:text-base text-sm pt-5 mt-5">Creative and passionate about UI/UX design, I design modern, user-friendly, and visually appealing interfaces that enhance user experience. Using Figma, Adobe XD, and Photoshop, I create layouts that combine aesthetics and functionality. My design process integrates responsive design, typography, and branding, ensuring each product is intuitive and engaging.</p>
+      <p className="text-gray-600 md:text-base text-sm pt-5 mt-5">Creative and passionate about UI/UX design, I design modern, user-friendly, and visually appealing interfaces that enhance user experience. Using Figma, Adobe XD, and Photoshop, I create layouts that combine aesthetics and functionality. My design process integrates responsive design, typography, and branding, ensuring each product is intuitive and engaging.</p>
       </ul>
-<ul className= "list-disc text-gray-500   md:text-base leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5 text-xs">
+<ul className= "list-disc text-gray-600   md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5 text-xs">
        <li>
 Designed interactive prototypes and wireframes focused on usability and accessibility.
       </li>
@@ -155,9 +156,9 @@ Applied SEO and digital marketing strategies to boost visibility and user engage
      </ul>
      <ul className="pt-5 mt-5">
      <span className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">BackEnd Developer</span>
-      <p className="text-gray-500 md:text-base text-xs pt-5 mt-5">Specialized in developing secure, modular, and scalable backends using NestJS and MongoDB. I implement clean architecture principles with DTOs, discriminators, and validation layers (Zod) to ensure data integrity and performance.</p>
+      <p className="text-gray-600 md:text-base text-xs pt-5 mt-5">Specialized in developing secure, modular, and scalable backends using NestJS and MongoDB. I implement clean architecture principles with DTOs, discriminators, and validation layers (Zod) to ensure data integrity and performance.</p>
       </ul>
-<ul className= "list-disc text-gray-500 text-xs md:text-base leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+<ul className= "list-disc text-gray-600 text-xs md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5">
        <li>
 Built RESTful and modular APIs using NestJS and Express-compatible middleware.
       </li>
@@ -167,9 +168,9 @@ Developing scalable APIs with Node.js, Express.js, and MongoDB.
         </ul>
          <ul className="pt-5 mt-5">
      <span className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">FrontEnd Developer</span>
-      <p className="text-gray-500 text-xs md:text-base pt-5 mt-5">I develop dynamic and responsive interfaces using Next.js and React, focusing on user experience and maintainable code. With Zustand and Context API, I ensure efficient state management and modular design.</p>
+      <p className="text-gray-600 text-xs md:text-base pt-5 mt-5">I develop dynamic and responsive interfaces using Next.js and React, focusing on user experience and maintainable code. With Zustand and Context API, I ensure efficient state management and modular design.</p>
       </ul>
-<ul className= "list-disc text-gray-500 text-xs md:text-base leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+<ul className= "list-disc text-gray-600 text-xs md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5">
        <li>
 Built reusable UI components with React, Next.js,Bootstrap, and Tailwind CSS.
       </li>
@@ -193,7 +194,7 @@ Improved performance and SEO through server-side rendering (SSR) and static site
       </div>
      <div className="pl-4 pt-5 text-justify md:w-full w-[150px]">
            <p className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">Projects ADC:</p>
-               <ul className="list-disc text-gray-500 text-xs md:text-base leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+               <ul className="list-disc text-gray-600 text-xs md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5">
       <li>
         Developed scalable RESTful APIs using NestJS, MongoDB, and discriminators for structured data models.
       </li>
@@ -203,7 +204,7 @@ Improved performance and SEO through server-side rendering (SSR) and static site
       <li>Built responsive and interactive interfaces using Next.js, React, TypeScript, and Tailwind CSS.</li>
      </ul>
         <p className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">Project world Fitness:</p>
-               <ul className="list-disc text-gray-500 text-xs md:text-base leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+               <ul className="list-disc text-gray-600 text-xs md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5">
       <li>
         WorldFitness offers tailored workout programs for pregnant women and beginners, ensuring safety and gradual progression.
       </li>
@@ -213,7 +214,7 @@ Improved performance and SEO through server-side rendering (SSR) and static site
       <li>Beginner-friendly training plans make it easy to start a healthy and sustainable fitness journey.</li>
      </ul>
       <p className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">Project BCC Center:</p>
-               <ul className="list-disc text-gray-500 text-xs md:text-base leading-[2] font-thin marker:text-gray-600 marker:text-l pt-5">
+               <ul className="list-disc text-gray-600 text-xs md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5">
       <li>
      Welcome to Best Challenge Center, a professional training and consulting firm that opens the doors to a better future!
       </li>
@@ -372,7 +373,7 @@ Improved performance and SEO through server-side rendering (SSR) and static site
         </h2>
         <SiSkillshare size="30" className="text-blue-600"/>
       </div>
-      <ul className="pt-5 pe-5 text-justify li-responsive">
+      <ul className="pt-5 pe-5 text-justify li-2-responsive">
                 <li className="fs-six n5-color leading-[2] li-responsive">Project Management</li>
                              <li className="fs-six n5-color leading-[2] li-responsive">Public Relations Teamwork</li>
                              <li className="fs-six n5-color leading-[2] li-responsive">Time Management</li>
@@ -390,7 +391,7 @@ Improved performance and SEO through server-side rendering (SSR) and static site
        <p className="text-gray-700 pt-5 mt-5 text-base text-justify li-responsive">Full-Stack Web Development (JavaScript & TypeScript)
 
 | 2023 - 2025</p>
-               <ul className="list-disc text-gray-500 text-base leading-[2] font-thin marker:text-gray-600 marker:text-xl pt-5 ps-5 mt-5 text-justify">
+               <ul className="list-disc text-gray-600 text-base leading-[2] font-thin marker:text-gray-600 marker:text-xl pt-5 ps-5 mt-5 text-justify">
       <li className="fs-seven n5-color leading-[2] li-responsive">
 Front-End: Next.js, React.js, Zustand, Tailwind CSS
       </li>
@@ -444,7 +445,7 @@ Sweden (Intermediate)
         </h2>
         <GiHobbitDwelling   size={20} className="text-blue-600 ms-1"/>
       </div>
-      <ul className="text-justify list-disc text-gray-500 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-xl pt-5 ps-5 mt-5">
+      <ul className="text-justify list-disc text-gray-600 text-rebase leading-[2] font-thin marker:text-gray-600 marker:text-xl pt-5 ps-5 mt-5">
               <li className="fs-seven n5-color leading-[2] li-responsive">
       Coaching
       </li>
@@ -476,17 +477,17 @@ Traveling
 </div>
 <section className="bg-white p-10 rounded-xl mt-10 md:w-full w-[180px] -ml-10 sm:-ml-6
 md:ml-0">
-  <div className="flex flex-wrap justify-center md:justify-between gap-6">
+  <div className="flex flex-wrap justify-center md:justify-between gap-6 ">
   <div className="flex items-center gap-3">
-               <h2 className="text-xs md:text-sm font-bold text-gray-500">
+               <h2 className="text-xs md:text-sm font-bold text-gray-600">
           github.com/foued-belajouza
         </h2>
         <div className="bg-gray-100 p-2 rounded-full hover:bg-blue-400">
-        <FaGithub className="text-blue-600 hover:text-white transition" size={15}/>
+        <FaGithub className="text-blue-600 hover:text-white transition icon-git" size={15}/>
          </div>
          </div>
    <div className="flex items-center gap-3">
-               <h2 className="text-xs md:text-sm font-bold text-gray-500">
+               <h2 className="text-xs md:text-sm font-bold text-gray-600">
      Linkedin.com/in
         </h2>
          <div className="bg-gray-100 p-2 rounded-full hover:bg-blue-400">
@@ -495,8 +496,8 @@ md:ml-0">
 </div>  
  <div className="flex items-center gap-3 ps-5">
   
-   <Link href="/contact" className="text-xs md:text-sm font-bold text-gray-500 hover:text-blue-600 inline-flex gap-3">
-email <span className="p-1 bg-gray-100 rounded-full hover:bg-blue-400"><EnvelopeOpen className="text-blue-600 hover:text-white transition" size={20}/></span>
+   <Link href="/contact" className="text-xs md:text-sm font-bold text-gray-600 hover:text-blue-600 inline-flex gap-3 link-email">
+email <span className="p-1 bg-gray-100 rounded-full hover:bg-blue-400"><EnvelopeOpen className="text-blue-600 hover:text-white transition icon-email" size={20}/></span>
  </Link>   
 </div>   
  </div>    

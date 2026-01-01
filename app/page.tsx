@@ -75,12 +75,26 @@ export default function Home() {
 
   {/* Contenu principal */}
   <main className="col-span-12 lg:col-span-9">
-  <section className="section-projects p-5">
-  <h3 className="title-projects pt-5">
+  <section className="section-projects">
+  <h3 className="title-projects  md:text-2xl pt-10 mt-10
+  text-sm
+  font-semibold
+  text-[#333]
+   flex
+  justify-center">
     A collection of my best projects
   </h3>
 
-  <p className="paragraph-projects pt-5 ps-10">
+  <p className="paragraph-projects pt-10 ps-10 text-[#666]
+  md:max-w-[700px]
+  max-w-[200px]
+   mx-auto
+  md:text-base
+  text-sm
+    flex
+      text-center
+      text-justify
+  justify-start pe-10">
     With many years in web development, I acquired extensive experience
     working on projects across freelance and technologies. Let me show
     you my best creations.
@@ -93,7 +107,7 @@ export default function Home() {
 
 
     {/* Filtre des projets */}
-    <div className="flex flex-wrap justify-center gap-4  w-full md:-ml-15 pb-10">
+    <div className="flex flex-wrap justify-center gap-4  md:w-full md:-ml-15 pb-10 w-[200px] web-app">
       {["All", "Web App", "Frontend", "Backend", "Adobe XD", "Photoshop", "Figma", "Marketing Digital"].map((tab) => (
         <button
           key={tab}
@@ -137,13 +151,13 @@ export default function Home() {
       <div className="p-4">
         <div className="flex flex-wrap gap-2 mb-2">
           {project.categories.map((cat, i) => (
-            <span key={i} className="px-3 py-1 text-sm bg-gray-200 rounded-full text-gray-700">
+            <span key={i} className="px-3 py-1 md:px-3 md:py-1  text-sm link-portfolio">
               {cat}
             </span>
           ))}
         </div>
 
-        <Link href={project.href} className="text-lg font-semibold text-gray-800 hover:text-blue-500 block">
+        <Link href={project.href} className="md:text-lg  font-semibold text-gray-800 hover:text-blue-500 block link-title">
           {project.title}
         </Link>
       </div>

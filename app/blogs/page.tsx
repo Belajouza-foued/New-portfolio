@@ -83,10 +83,10 @@ export default function Blog() {
         </aside>
 
         {/* CONTENU PRINCIPAL → col-9 desktop / col-12 mobile */}
-        <main className="col-span-12 lg:col-span-9  lg:ml-10 pt-10 mt-10">
+        <main className="col-span-12 lg:col-span-9  lg:ml-10">
 
           {/* TITRE */}
-          <section className="text-center max-w-3xl mx-auto mt-10 lg:ml-20 ps-5  ml-0 md:ml-10 px-5">
+          <section className="text-center max-w-3xl mx-auto mt-10 lg:ml-20 ps-5  ml-0 md:ml-10 px-5 title-blog">
             <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-700 font-bold leading-tight">
             A Blog About Web Development
             </h1>
@@ -94,16 +94,16 @@ export default function Blog() {
            Welcome to my blog. Subscribe and get my latest blog post in your inbox.
                           </p>
           </section>
-          <section>
+          <section className="button-blog">
             <div className="flex flex-col md:flex-row justify-evenly items-center text-center pt-10 mt-10 max-w-4xl lg:ml-5">
                       <input type="email" placeholder="Your email" className="w-full border-2  md:flex-1 border-gray-300 rounded-xl py-3 px-4 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-600 md:max-w-full max-w-[200px]"/>
             <button type="submit" className="bg-blue-600 text-white md:px-12 md:py-3 px-6 py-2 mt-2 rounded-xl font-semibold hover:bg-blue-700">Submit</button>
             </div>
                       </section>
-                    <div className="flex max-w-5xl itmes-center justify-center lg:-ml-10 mt-10">
-  <hr className="border-gray-300 w-full border-t md:max-w-full mt-10 pt-10 max-w-[250px] "></hr>
+                    <div className="flex max-w-5xl itmes-center justify-center lg:-ml-10 pt-5">
+  <hr className="border-gray-300 w-full border-t md:max-w-full mt-5 pt-5 max-w-[250px] "></hr>
 </div>
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 maw-w-3xl gap-10 pt-2 md:max-w-5xl pl-10 md:-ml-10"> 
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 maw-w-3xl gap-10 pt-2 md:max-w-5xl pl-10 md:-ml-10 group-col"> 
        {/*blogs-hover*/}
   {imgBlogs.map((imgBlog) => (
     <div key={imgBlog.id} className="group border rounded-lg overflow-hidden shadow hover:shadow-lg transition w-[200px] md:w-[250px] max-w-[250px]">

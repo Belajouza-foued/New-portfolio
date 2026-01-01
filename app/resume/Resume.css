@@ -14,7 +14,7 @@
 }
 .button-2 {
     font-size: 10px ;
-    max-width: 150px;
+    max-width: 200px;
 }
 .work-transform {
     transform: translateX(-30px);
@@ -24,11 +24,26 @@
 }
 }
 @media(max-width: 768px) {
+    .para-resume {
+        transform: translateX(-25px);
+    }
     .li-responsive {
         font-size: 10px !important;
+        transform: translateX(-20px);
+        max-width: 170px;
            }
     .cv-fofo {
-        transform: translateX(-10px);
+        transform: translateX(-20px);
+    }
+    .link-email {
+        transform: translateX(15px);
+    }
+.icon-git {
+    transform: translateX(-2px);
+}
+
+    .icon-email {
+transform: translateX(5px);
     }
     
 }
