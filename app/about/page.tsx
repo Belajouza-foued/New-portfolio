@@ -211,7 +211,7 @@ export default function About() {
       {/* Button */}
       <div className="flex justify-end w-full lg:ml-20 mb-5">
       <Link
-        href="/blog"
+        href="/blogs"
         data-aos="zoom-in-right"
         className="bg-blue-600 mb-7 text-white px-5 py-5 md:px-5 md:py-3 rounded-full flex items-center gap-2 whitespace-nowrap hover:bg-blue-700 transition h-full "
       >

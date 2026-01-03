@@ -129,4 +129,15 @@ html, body {
   margin: 0 !important;
   padding: 0 !important;
 }
+.ps-2 {
+  padding-left: 0.5rem; /* équivalent pl-2 */
+}
+
+.max-w-3xl {
+  max-width: 48rem; /* équivalent Tailwind max-w-3xl */
+}
+
+.group-hover\:opacity-0:hover {
+  opacity: 0;
+}
 

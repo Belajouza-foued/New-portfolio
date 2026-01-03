@@ -100,7 +100,7 @@ export default function Home() {
     you my best creations.
   </p>
 
-  <Link href="/#contact" className="btn-hire mt-10">
+  <Link href="/contact" className="btn-hire mt-10">
     Hire Me <FiArrowRight className="w-5 h-5" />
   </Link>
 </section>
