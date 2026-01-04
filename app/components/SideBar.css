@@ -21,6 +21,7 @@ margin-bottom: 10px !important;
 
 /* Photo de profil */
 .profile-img {
+  text-align: center;
   border-radius: 50%;
   border: 2px solid rgb(var(--n4));
   margin-bottom: 15px;
@@ -30,6 +31,7 @@ margin-bottom: 10px !important;
  
  margin-top: 10px;
  width: 30px;
+ transform: translateX(50px);
 }
 .name {
    

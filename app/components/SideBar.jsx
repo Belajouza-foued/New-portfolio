@@ -29,10 +29,10 @@ export default function SideBar() {
        <div className="md:flex-col flex-col itmes-center justify-center mx-auto side-res">
       <Image
         src="/fofo-2.jpg"
-        width={50}
-        height={50}
+        width={45}
+        height={45}
         alt="Photo de profil"
-        className="profile-img md:w-[80px]"
+        className="profile-img md:w-[80px] mx-auto"
       />
 
       {/* Nom et titre */}
