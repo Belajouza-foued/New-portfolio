@@ -31,7 +31,7 @@ export default function Resume() {
       ml-0 md:ml-[320px]
       next-project py-28 
       bg-no-repeat bg-end bg-cover bg-fixed">
-    <div className="container mx-auto px-4 flex flex-wrap justify-between items-center text-justify gap-4 md:gap-10 pt-2">
+    <div className="container mx-auto px-4 flex flex-wrap justify-between items-center text-justify gap-4 md:gap-10 pt-2 resume-container">
       
       {/* Texte */}
       <div data-aos="zoom-in-left" className="md:max-w-xl md:-ml-2 -ml-6">
@@ -58,7 +58,13 @@ export default function Resume() {
             <span>foued.belajouza@gmail.com</span>
             </li>
      
-          <li className="flex items-center gap-2"> <FaGlobe className="text-blue-500"/><span>www.my-portfolio.com</span> 
+          <li className="flex items-center gap-2"> <FaGlobe className="text-blue-500"/>  <Link
+    href="/"
+    className="text-gray-600 hover:text-blue-600 underline"
+    target="_blank"
+  >
+    www.my-portfolio.com
+  </Link> 
           </li>
        
           <li className="flex items-center gap-2">
@@ -91,17 +97,15 @@ export default function Resume() {
        text-xs 
       leading-relaxed
       md:w-full
-      w-[150px]
+      w-[190px]
       para-resume
+      pl-3 ml-2
   ">
-    I’m a Full-Stack Web Developer and Web Designer focused on crafting
-    clean, user-friendly. I’m passionate
-    about building high-quality websites using modern technologies.
+  I am a web developer and designer with a strong focus on creating clean, intuitive, and user-centered interfaces. 
+  I enjoy building modern, high-quality websites using efficient and up-to-date technologies.
     <br></br>
-     My background in high-level sports — as a player, teacher, and coach —
-    has taught me discipline, patience, responsibility, confidence, and
-    adaptability. These values drive my motivation and fast learning in
-    web development, a field I’m truly passionate about.
+    With a background in competitive sports as a player, instructor, and coach, I have developed strong discipline, resilience, teamwork, and adaptability.
+     These qualities support my ability to learn quickly, stay motivated, and continuously grow in the field of web development, which I am deeply passionate about.
   </p>
 
 </section>
@@ -112,7 +116,7 @@ export default function Resume() {
     <div className="flex flex-col gap-4 lg:-ml-5 -ml-2 sm:-ml-6 md:-ml-4  work-transform">
       
       {/* Titre */}
-      <div className="flex items-center gap-3 pt-5">
+      <div className="flex items-center gap-3 pt-5 work-resume">
         <div className="w-1 h-12 bg-blue-600"></div>
         <h2 className="text-2xl md:text-4xl font-semibold text-blue-600">
           Work Experience
@@ -122,14 +126,14 @@ export default function Resume() {
 
       {/* Contenu */}
       <div className="pl-4 pt-5 text-justify md:w-full w-[150px]">
-     <ul className="">
-      <span className="text-blue-700 pt-5 mt-5 text-xl ">Junior Developer:</span>
+     <ul className="work-resume">
+      <span className="text-blue-700 pt-5 mt-5 text-xl">Junior Developer:</span>
       <p className="text-gray-600 text-xs md:text-base pt-2">
 Passionate about web development and design, I specialize in Full-Stack Development using modern frameworks like <strong>Next.Js</strong> and <strong>Nest.Js </strong>I build high-performance and scalable web applications with a strong focus on clean architecture and maintainability. My expertise includes <strong>Zod</strong> for schema validation,
-<strong>Zustand</strong>for state management, and <strong>Dto</strong> patterns to ensure reliable data flow between client and server.
+<strong>Zustand</strong> for state management, and <strong>Dto</strong> patterns to ensure reliable data flow between client and server.
       </p>
      </ul>
-     <ul className="list-disc text-gray-600 md:text-base text-xs  md:leading-[2] marker:text-gray-600 marker:text-l pt-5 w-[150px] md:w-full">
+     <ul className="list-disc text-gray-600 md:text-base text-xs  md:leading-[2] marker:text-gray-600 marker:text-l pt-5 w-[150px] md:w-full work-resume">
       <li>
         Developed scalable RESTful APIs using NestJS, MongoDB, and discriminators for structured data models.
       </li>
@@ -139,11 +143,11 @@ Passionate about web development and design, I specialize in Full-Stack Developm
       <li>Built responsive and interactive interfaces using Next.js, React, TypeScript, and Tailwind CSS.</li>
      </ul>
 
-    <ul className="pt-5 mt-5 ">
+    <ul className="pt-5 mt-5 work-resume">
      <span className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">Web Designer</span>
       <p className="text-gray-600 md:text-base text-sm pt-5 mt-5">Creative and passionate about UI/UX design, I design modern, user-friendly, and visually appealing interfaces that enhance user experience. Using Figma, Adobe XD, and Photoshop, I create layouts that combine aesthetics and functionality. My design process integrates responsive design, typography, and branding, ensuring each product is intuitive and engaging.</p>
       </ul>
-<ul className= "list-disc text-gray-600   md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5 text-xs">
+<ul className= "work-resume text-gray-600   md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5 text-xs">
        <li>
 Designed interactive prototypes and wireframes focused on usability and accessibility.
       </li>
@@ -154,11 +158,11 @@ Integrated UI/UX best practices with Next.js and Tailwind CSS for pixel-perfect 
 Applied SEO and digital marketing strategies to boost visibility and user engagement.
       </li>
      </ul>
-     <ul className="pt-5 mt-5">
+     <ul className="pt-5 mt-5 work-resume">
      <span className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">BackEnd Developer</span>
       <p className="text-gray-600 md:text-base text-xs pt-5 mt-5">Specialized in developing secure, modular, and scalable backends using NestJS and MongoDB. I implement clean architecture principles with DTOs, discriminators, and validation layers (Zod) to ensure data integrity and performance.</p>
       </ul>
-<ul className= "list-disc text-gray-600 text-xs md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5">
+<ul className= "list-disc text-gray-600 text-xs md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5 work-resume">
        <li>
 Built RESTful and modular APIs using NestJS and Express-compatible middleware.
       </li>
@@ -166,11 +170,11 @@ Built RESTful and modular APIs using NestJS and Express-compatible middleware.
 Developing scalable APIs with Node.js, Express.js, and MongoDB.
       </li>
         </ul>
-         <ul className="pt-5 mt-5">
+         <ul className="pt-5 mt-5 work-resume">
      <span className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">FrontEnd Developer</span>
       <p className="text-gray-600 text-xs md:text-base pt-5 mt-5">I develop dynamic and responsive interfaces using Next.js and React, focusing on user experience and maintainable code. With Zustand and Context API, I ensure efficient state management and modular design.</p>
       </ul>
-<ul className= "list-disc text-gray-600 text-xs md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5">
+<ul className= "work-resume text-gray-600 text-xs md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5 ">
        <li>
 Built reusable UI components with React, Next.js,Bootstrap, and Tailwind CSS.
       </li>
@@ -185,14 +189,14 @@ Improved performance and SEO through server-side rendering (SSR) and static site
    
       </div>
  {/*projects*/}
-  <div className="flex items-center gap-3 pt-5 text-justify">
+  <div className="flex items-center gap-3 pt-5 text-justify work-resume">
         <div className="w-1 h-12 bg-blue-600"></div>
         <h2 className="text-3xl md:text-4xl font-semibold text-blue-600">
           Projects
         </h2>
         <GrProjects size={20} className="text-blue-600"/>
       </div>
-     <div className="pl-4 pt-5 text-justify md:w-full w-[150px]">
+     <div className="pl-4 pt-5 text-justify md:w-full w-[150px] work-resume">
            <p className="text-blue-700 pt-5 mt-5 text-sm md:text-xl">Projects ADC:</p>
                <ul className="list-disc text-gray-600 text-xs md:text-base leading-[2] marker:text-gray-600 marker:text-l pt-5">
       <li>
@@ -334,8 +338,8 @@ Improved performance and SEO through server-side rendering (SSR) and static site
         </h2>
         <SiExpertsexchange className="text-blue-600" size={20}/>
       </div>
-    <p className="text-blue-700 pt-5 mt-5 md:text-xl text-sm text-justify">Technical:</p>
-     <ul className="ps-5 list-disc text-gray-500 md:text-base leading-[5] font-thin marker:text-gray-600 marker:text-l text-justify">
+    <p className="text-blue-700 pt-5 mt-5 md:text-xl text-xl text-justify">Technical:</p>
+     <ul className="ps-5 list-disc  text-gray-500 md:text-base leading-[5] font-thin marker:text-gray-600 marker:text-l text-justify ">
     <li className  
    ="fs-six n5-color leading-[2] li-responsive">
      JavaScript/React
@@ -475,15 +479,15 @@ Traveling
 <div className="flex flex-nowrap justify-center items-center">
   <hr className="border-gray-300 w-full border-t mt-10 pt-10"></hr>
 </div>
-<section className="bg-white p-10 rounded-xl mt-10 md:w-full w-[180px] -ml-10 sm:-ml-6
+<section className="bg-white p-10 rounded-xl mt-10 md:w-full w-[200px] -ml-15 sm:-ml-6
 md:ml-0">
   <div className="flex flex-wrap justify-center md:justify-between gap-6 ">
   <div className="flex items-center gap-3">
-               <h2 className="text-xs md:text-sm font-bold text-gray-600">
+               <h2 className="text-[11px] md:text-sm font-bold text-gray-600 pt-1">
           github.com/foued-belajouza
         </h2>
         <div className="bg-gray-100 p-2 rounded-full hover:bg-blue-400">
-        <FaGithub className="text-blue-600 hover:text-white transition icon-git" size={15}/>
+       <Link href="https://github.com/Belajouza-foued" className=""> <FaGithub className="text-blue-600 hover:text-white transition icon-git" size={20}/></Link>
          </div>
          </div>
    <div className="flex items-center gap-3">
@@ -496,8 +500,8 @@ md:ml-0">
 </div>  
  <div className="flex items-center gap-3 ps-5">
   
-   <Link href="/contact" className="text-xs md:text-sm font-bold text-gray-600 hover:text-blue-600 inline-flex gap-3 link-email">
-email <span className="p-1 bg-gray-100 rounded-full hover:bg-blue-400"><EnvelopeOpen className="text-blue-600 hover:text-white transition icon-email" size={20}/></span>
+   <Link href="/contact" className="text-xs md:text-sm font-bold text-gray-600 hover:text-blue-600 inline-flex gap-3 link-email"><span className="mt-1">email </span>
+<span className="p-1 bg-gray-100 rounded-full hover:bg-blue-400"><EnvelopeOpen className="text-blue-600 hover:text-white transition icon-email" size={20}/></span>
  </Link>   
 </div>   
  </div>    

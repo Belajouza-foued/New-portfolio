@@ -204,7 +204,7 @@ export default function About() {
           main technical skill sets and technologies I use. Want to find
           out more about my experience? Check out my{" "}
           <Link href="/resume" className="text-blue-600 hover:underline">online resume</Link> and {""}
-          <Link href="/portfolio" className="text-blue-600 hover:underline">project portfolio</Link>.
+          <Link href="/" className="text-blue-600 hover:underline">project portfolio</Link>.
         </p>
       </div>
 

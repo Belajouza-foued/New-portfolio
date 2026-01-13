@@ -16,21 +16,38 @@
     font-size: 10px ;
     max-width: 200px;
 }
+.list-disc {
+   
+}
+.work-resume {
+    width: 180px !important;
+    margin: auto;
+    transform: translateX(30px);
+
+}
 .work-transform {
     transform: translateX(-30px);
 }
 .foued-contact {
     transform: translateX(-30px);
 }
+.resume-container {
+    margin: auto;
+      transform: translateX(30px);
+}
 }
 @media(max-width: 768px) {
     .para-resume {
-        transform: translateX(-25px);
+       width: 200px !important;
+    }
+    .junior {
+        width: 180px !important;
+          transform: translatex(-30px);
     }
     .li-responsive {
-        font-size: 10px !important;
-        transform: translateX(-20px);
-        max-width: 170px;
+        font-size: 13px !important;
+      
+        max-width: 180px;
            }
     .cv-fofo {
         transform: translateX(-20px);

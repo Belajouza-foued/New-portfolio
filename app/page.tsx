@@ -87,7 +87,7 @@ export default function Home() {
 
   <p className="paragraph-projects pt-10 ps-10 text-[#666]
   md:max-w-[700px]
-  max-w-[200px]
+  max-w-[300px]
    mx-auto
   md:text-base
   text-sm
@@ -101,13 +101,13 @@ export default function Home() {
   </p>
 
   <Link href="/contact" className="btn-hire mt-10">
-    Hire Me <FiArrowRight className="w-5 h-5" />
+    Hire Me <FiArrowRight className="w-4 h-4" />
   </Link>
 </section>
 
 
     {/* Filtre des projets */}
-    <div className="flex flex-wrap justify-center gap-4  md:w-full md:-ml-15 pb-10 w-[200px] web-app">
+    <div className="flex flex-wrap justify-center gap-4  md:w-full md:-ml-15 pb-10 w-[250px] web-app">
       {["All", "Web App", "Frontend", "Backend", "Adobe XD", "Photoshop", "Figma", "Marketing Digital"].map((tab) => (
         <button
           key={tab}

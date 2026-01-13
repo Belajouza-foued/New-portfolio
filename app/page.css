@@ -44,7 +44,9 @@
   display: inline-block;
 }
 @media (max-width: 768px) {
-
+.paragraph-projects {
+ 
+}
 .link-portfolio{
   padding: 2px 8px !important;
     font-size: 10px !important;
@@ -63,7 +65,8 @@
  
 
   .btn-hire {
-    margin-left: -40px;
+   
+    font-size: 11px;
   }
 }
 /*card*/

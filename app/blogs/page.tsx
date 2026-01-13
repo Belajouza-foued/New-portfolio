@@ -64,7 +64,7 @@ export default function Blog() {
     description: "I use React.js to create interactive, component-based UIs.With hooks, context, and modern state management patterns, I build responsive applications that are maintainable and scalable."
   },
     {
-    id: 17,
+    id: 18,
       title: "React / Hook",
     images: ["/assets/blog1.png","/assets/blog2.png"],
     href: "/contact",
