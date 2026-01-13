@@ -40,7 +40,7 @@ export default function Blog() {
       title: "BackEnd / NestJs",
     images: ["/assets/blog9.png","/assets/blog5.png"],
     href: "/contact",
-    description: "  I use <strong>NestJS</strong> to build robust, secure, and maintainable APIs.Its modular structure, decorators, and native JWT integration make it easy to manage routes,guards, and authentication.",
+    description: "  I use NestJS to build robust, secure, and maintainable APIs.Its modular structure, decorators, and native JWT integration make it easy to manage routes,guards, and authentication.",
   },
      {
     id: 15,
