@@ -44,6 +44,9 @@
   display: inline-block;
 }
 @media (max-width: 768px) {
+  .project-card {
+    
+  }
 .paragraph-projects {
  
 }
@@ -58,8 +61,7 @@
     font-size: 12px;
   }
   .web-app {
-    transform: translateX(30px);
-   
+    margin: 0 auto;   
       }
 
  

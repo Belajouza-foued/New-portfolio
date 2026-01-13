@@ -1,8 +1,12 @@
 @media (max-width :768px) {
  .group {
  margin: auto;
-   max-width: 200px;
-max-height: 250px;
+   width: 170px ;
+max-height: 260px;
+transform: translateX(-20px);
+    }
+    .group-hover {
+       
     }
   
 

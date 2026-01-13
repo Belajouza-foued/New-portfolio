@@ -16,7 +16,7 @@ export default function Blog() {
   },
   {
     id: 11,
-      title: "Mongoose / Discriminator",
+      title: "Mongoose/Discriminator",
     images: ["/assets/blog3.png","/assets/blog4.png"],
     href: "/contact",
     description : "Understand how Mongoose discriminators help you manage multiple document types in a single collection efficiently, improving structure and scalability."
@@ -125,16 +125,16 @@ export default function Blog() {
             fill
              className="absolute inset-0 object-contain opacity-0 
                transition duration-300 
-               group-hover:opacity-100 group-hover:scale-105"
+               group-hover:opacity-100 group-hover:scale-105 pb-2"
                   />
         )}
           </div>
       <div className="pt-2 ps-2">
         
-        <Link href={imgBlog.href} className="text-sm font-semibold text-gray-800 hover:text-blue-500 block ps-2">
+        <Link href={imgBlog.href} className="text-xs font-semibold text-gray-800 hover:text-blue-500 block ps-2">
           {imgBlog.title}
         </Link>
-              <p className="text-justify text-[10px] md:text-[12px] md:tracking-tight tracking-tight max-w-[150px] md:max-w-[220px] ps-2 pb-3 leading-[2]">
+              <p className="text-justify text-[9px] md:text-[12px] md:tracking-tight tracking-tight max-w-[150px] md:max-w-[220px] ps-2 pb-3 leading-[2]">
 {imgBlog.description}
   </p>
       </div>     
