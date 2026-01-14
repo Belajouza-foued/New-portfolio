@@ -24,7 +24,7 @@ const projects = [
     id: 3,
     title: "Barber Shop",
     categories: ["React JS", "Frontend"],
-    images: ["/assets/Barber-2.jpg", "/assets/barber-3.jpg"],
+    images: ["/assets/barber-2.jpg", "/assets/barber-3.jpg"],
     href: "/contact",
   },
   {
