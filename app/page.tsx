@@ -5,6 +5,17 @@ import Link from "next/link";
 import SideBar from "./components/SideBar";
 import '../app/page.css'
 import { FiArrowRight } from "react-icons/fi";
+const tabs = [
+  { label: "All" },
+  { label: "Web App", href: "/about"  },
+  { label: "FrontEnd", href: "/about"  },
+  { label: "Figma", href: "https://www.figma.com" },
+  { label: "BackEnd", href: "/about" },
+   { label: "Adope XD", href: "/about" },
+   { label: "Photoshop", href: "/about" },
+  { label: "Marketing digitale", href: "/about" },
+  
+];
 const projects = [
   {
     id: 1,
@@ -18,7 +29,7 @@ const projects = [
     title: "World Fitness App",
     categories: ["React JS", "Web Development"],
     images: ["/assets/fitness-1.jpg", "/assets/fitness-8.jpg"],
-    href: "/contact",
+    href: "https://react-project-git-world-fitness-foueds-projects-55b6a7cf.vercel.app/",
   },
     {
     id: 3,
@@ -32,19 +43,19 @@ const projects = [
     title: "Nutrition Regitser",
     categories: ["React JS", "Web Development"],
     images: ["/assets/fitness-4.jpg", "/assets/fitness-3.jpg"],
-    href: "/contact",
+    href: "https://react-project-git-world-fitness-foueds-projects-55b6a7cf.vercel.app/",
   },
     {
     id: 5,
     title: "Nutrition App",
     categories: ["React JS", "Frontend"],
     images: ["/assets/fitness-7.jpg", "/assets/img-10.jpg"],
-    href: "/contact",
+    href: "https://react-project-git-world-fitness-foueds-projects-55b6a7cf.vercel.app/",
   },
   {
     id: 6,
     title: "Marketing Dashboard",
-    categories: ["React JS", "Web Development"],
+    categories: ["Figma", "AdopeXD"],
     images: ["/images/dash-2.png", "/images/dash-figma.png"],
     href: "/contact",
   },
@@ -53,14 +64,14 @@ const projects = [
     title: "Best Challenge Center",
     categories: ["React JS", "Frontend"],
     images: ["/assets/choose-1.jpg", "/assets/choose-2.jpg"],
-    href: "/contact",
+    href: "https://bcc-socity.vercel.app/",
   },
   {
     id: 8,
     title: "Best Challenge Center",
     categories: ["React JS", "Web Development"],
     images: ["/assets/choose-3.jpg", "/assets/choose-4.jpg"],
-    href: "/contact",
+    href: "https://bcc-socity.vercel.app/",
   },
   
 ];
@@ -107,14 +118,24 @@ export default function Home() {
 
 
     {/* Filtre des projets */}
-    <div className="flex flex-wrap justify-center gap-4  md:w-full md:-ml-15 pb-10 w-[250px] web-app">
-      {["All", "Web App", "Frontend", "Backend", "Adobe XD", "Photoshop", "Figma", "Marketing Digital"].map((tab) => (
-        <button
-          key={tab}
-          className="px-8 py-3 text-gray-500 font-medium rounded-full hover:bg-primary/80 hover:text-white transition"
-        >
-          {tab}
-        </button>
+    <div className="flex flex-wrap justify-center gap-4  md:w-full md:-ml-15 pb-10 w-[250px] web-app"> {tabs.map((tab, i) =>
+    tab.href ? (
+      <a
+        key={i}
+        href={tab.href}
+        target={tab.href.startsWith("http") ? "_blank" : undefined}
+        rel="noopener noreferrer"
+        className="px-8 py-3 text-gray-500 font-medium rounded-full hover:bg-blue-600 hover:text-white transition"
+      >
+        {tab.label}
+      </a>
+    ) : (
+      <button
+        key={i}
+        className="px-8 py-3 text-gray-500 font-medium rounded-full hover:bg-blue-600 hover:text-white transition"
+      >
+        {tab.label}
+      </button>
       ))}
     </div>
 
@@ -160,11 +181,14 @@ export default function Home() {
         <Link href={project.href} className="md:text-lg  font-semibold text-gray-800 hover:text-blue-500 block link-title">
           {project.title}
         </Link>
-      </div>
+             </div>
 
     </div>
   ))}
 </div>
+
+
+
 
 
 
